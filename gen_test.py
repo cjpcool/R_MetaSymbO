@@ -208,17 +208,21 @@ def main():
     random.seed(args.seed)
 
     # ---- Build ASE dataset wrapper
-    if args.cif_dir:
-        ase_ds = build_cif_dir_dataset(args.cif_dir)
-    elif args.ase_db:
-        ase_ds = build_ase_db_dataset(args.ase_db)
-    elif args.ase_omat:
-        from fairchem.core.datasets import AseDBDataset
-        ase_ds = AseDBDataset(config=dict(src=args.ase_omat))
+    if args.no_generator:
+        ase_ds = None  # will use offline scaffold only
+        print('[INFO] --no-generator flag set; skipping dataset load.')
     else:
-        print('[INFO] No dataset path provided; using a tiny 1-sample offline scaffold just to run the model.\n'
-              '       For realistic use, pass --cif-dir DIR or --ase-db FILE.')
-        ase_ds = None
+        if args.cif_dir:
+            ase_ds = build_cif_dir_dataset(args.cif_dir)
+        elif args.ase_db:
+            ase_ds = build_ase_db_dataset(args.ase_db)
+        elif args.ase_omat:
+            from fairchem.core.datasets import AseDBDataset
+            ase_ds = AseDBDataset(config=dict(src=args.ase_omat))
+        else:
+            print('[INFO] No dataset path provided; using a tiny 1-sample offline scaffold just to run the model.\n'
+                '       For realistic use, pass --cif-dir DIR or --ase-db FILE.')
+            ase_ds = None
 
     if ase_ds is not None:
         dataset = OMAT24Dataset(ase_ds, cutoff=args.cutoff)
@@ -319,11 +323,9 @@ def main():
         # Build neighbor graph on CPU, then move to device with the Batch
         edge_index = radius_graph(cart_s.cpu(), r=args.cutoff, batch=(batch_s.cpu() if batch_s is not None else None))
 
-
         if args.no_generator:
             print('[INFO] --no-generator flag set; skipping Agent-2 generation.')
-            
-            return
+            lengths_pred, angles_pred, coords_gen, z_gen = lengths_s, angles_s, cart_s, z_s
         else:
             print('[INFO] Generating scaffold with Agent-2...')
             data = Data(
