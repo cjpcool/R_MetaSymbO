@@ -46,6 +46,8 @@ This repository ties together three phases:
 ### 1) Generate a crystal (Agent-1/2 only)
 
 **LLM scaffold mode (Agent-1):**
+Download R_MetaSymbo checkpoint (omat24_rattle2) from https://drive.google.com/drive/folders/1JQ6-tAcz7B5CCfuJSiCyuYng-0eFO9GY?usp=sharing
+
 ```bash
 python gen_test.py \
   --cif-dir ./data/cifs \

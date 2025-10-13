@@ -132,6 +132,54 @@ def offline_scaffold(prototype: str = 'rocksalt') -> Tuple[torch.Tensor, torch.T
     return z, cart_coords, batch, lengths, angles, num_atoms
 
 
+# ---------------- Timing Decorator ----------------
+def timed(func=None):
+    """函数计时装饰器。
+
+    使用方式: 
+    1) 直接装饰: @timed  -> 调用时 label 默认为函数名。
+    2) 动态包装: wrapped = timed(original_fn); wrapped(..., timer_label='自定义标签', save_dir='path')
+
+    调用时可额外传入:
+        timer_label: 自定义计时块名称
+        save_dir: 若提供, 记录到 save_dir/generation_time.txt
+
+    返回值: (result, elapsed_seconds)
+    """
+    import functools, time
+
+    if func is None:
+        # 支持 @timed() 形式（目前不需要参数，保留扩展点）
+        def _wrap(f):
+            return timed(f)
+        return _wrap
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        label = kwargs.pop('timer_label', None) or func.__name__
+        save_dir = kwargs.pop('save_dir', None)
+        start = time.time()
+        print(f"[TIMER] {label} started.")
+        result = func(*args, **kwargs)
+        elapsed = time.time() - start
+        print(f"[TIMER] {label} finished in {elapsed:.3f} s.")
+        if save_dir is not None:
+            try:
+                os.makedirs(save_dir, exist_ok=True)
+                with open(os.path.join(save_dir, 'generation_time.txt'), 'a', encoding='utf-8') as f:
+                    f.write(f"{label}: {elapsed:.6f} seconds\n")
+            except Exception as e:
+                print(f"[TIMER][WARN] Failed to write timing log: {e}")
+        return result, elapsed
+
+    return wrapper
+
+# 兼容旧接口: 仍保留 run_with_timer 以免其它脚本引用
+def run_with_timer(label: str, fn, *args, save_dir: str = None, **kwargs):
+    wrapped = timed(fn)
+    return wrapped(*args, timer_label=label, save_dir=save_dir, **kwargs)
+
+
 
 
 # ---------- Main ----------
@@ -150,6 +198,7 @@ def main():
     p.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu')
     p.add_argument('--logic-mode', type=str, default='union', choices=['union', 'mix', 'int', 'neg'])
     p.add_argument('--no-llm', action='store_true', help='Use offline built-in scaffold (skip Agent-1 LLM).')
+    p.add_argument('--no-generator', action='store_true', help='Skip Agent-2 generation.')
     p.add_argument('--prototype', type=str, default='rocksalt', choices=['rocksalt', 'diamond'], help='Offline scaffold type.')
     p.add_argument('--seed', type=int, default=1337)
     args = p.parse_args()
@@ -218,11 +267,14 @@ def main():
 
     os.makedirs(args.save_dir, exist_ok=True)
 
+    # 创建计时包装的协同函数
+    collab_timed = timed(agent.collaborate_between_agents_12)
+
     if args.no_llm:
         print('[INFO] Using offline scaffold prototype:', args.prototype)
         scaffold = offline_scaffold(args.prototype)
         batch_data = next(iter(DataLoader(dataset, batch_size=1, shuffle=True)))
-        _final = agent.collaborate_between_agents_12(
+        _final, elapsed = collab_timed(
             batch_data,
             scaffold,
             logic_mode=args.logic_mode,
@@ -234,6 +286,8 @@ def main():
             lam_node=1.0,
             lam_keep=1.0,
             lam_prior=1e-4,
+            timer_label='Agent12 Offline Generation ' + args.prompt,
+            save_dir=args.save_dir,
         )
         _, lengths_pred, angles_pred, coords_gen, z_gen = _final
         out = os.path.join(args.save_dir, f'{args.prototype}_{args.logic_mode}_offline.npz')
@@ -242,7 +296,7 @@ def main():
                  cart_coords=coords_gen.detach().cpu().numpy(),
                  lengths=lengths_pred.detach().cpu().view(-1).numpy(),
                  angles=angles_pred.detach().cpu().view(-1).numpy())
-        print('[DONE] Saved generation to', out)
+        print('[DONE] Saved generation to', out, f"(elapsed {elapsed:.3f}s)")
         return
     
     else:
@@ -265,41 +319,49 @@ def main():
         # Build neighbor graph on CPU, then move to device with the Batch
         edge_index = radius_graph(cart_s.cpu(), r=args.cutoff, batch=(batch_s.cpu() if batch_s is not None else None))
 
-        data = Data(
-            frac_coords=frac_s,
-            cart_coords=cart_s,
-            edge_index=edge_index,
-            node_type=z_s,
-            num_atoms=num_atoms_s,
-            lengths=lengths_s,
-            angles=angles_s,
-            batch=torch.zeros(len(z_s), dtype=torch.long),
-            y=torch.zeros(1, 1),
-        )
-        batch_data = Batch.from_data_list([data]).to(args.device)
 
-        print('[INFO] Generating scaffold with Agent-2...')
-        _final = agent.collaborate_between_agents_12(
-            batch_data,
-            scaffold,
-            logic_mode=args.logic_mode,
-            num_steps_lattice=30,
-            num_steps_geo=300,
-            optimize_network_params=False,
-            mix_lam=0.2,
-            condition=None,
-            lam_node=1.0,
-            lam_keep=1.0,
-            lam_prior=1e-4,
-        )
-        _, lengths_pred, angles_pred, coords_gen, z_gen = _final
+        if args.no_generator:
+            print('[INFO] --no-generator flag set; skipping Agent-2 generation.')
+            
+            return
+        else:
+            print('[INFO] Generating scaffold with Agent-2...')
+            data = Data(
+                frac_coords=frac_s,
+                cart_coords=cart_s,
+                edge_index=edge_index,
+                node_type=z_s,
+                num_atoms=num_atoms_s,
+                lengths=lengths_s,
+                angles=angles_s,
+                batch=torch.zeros(len(z_s), dtype=torch.long),
+                y=torch.zeros(1, 1),
+            )
+            batch_data = Batch.from_data_list([data]).to(args.device)
+            _final, elapsed = collab_timed(
+                batch_data,
+                scaffold,
+                logic_mode=args.logic_mode,
+                num_steps_lattice=30,
+                num_steps_geo=300,
+                optimize_network_params=False,
+                mix_lam=0.2,
+                condition=None,
+                lam_node=1.0,
+                lam_keep=1.0,
+                lam_prior=1e-4,
+                timer_label='Agent12 LLM Generation ' + args.prompt,
+                save_dir=args.save_dir,
+            )
+            _, lengths_pred, angles_pred, coords_gen, z_gen = _final
+            
         out = os.path.join(args.save_dir, f'gen_{args.logic_mode}.npz')
         np.savez(out,
                 atom_types=z_gen.detach().cpu().numpy(),
                 cart_coords=coords_gen.detach().cpu().numpy(),
                 lengths=lengths_pred.detach().cpu().view(-1).numpy(),
                 angles=angles_pred.detach().cpu().view(-1).numpy())
-        print('[DONE] Saved generation to', out)
+        print('[DONE] Saved generation to', out, f"(elapsed {elapsed:.3f}s)")
 
 
 if __name__ == '__main__':

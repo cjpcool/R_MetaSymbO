@@ -24,6 +24,7 @@ import json
 import re
 import numpy as np
 from typing import Tuple, Dict, Any
+from functools import wraps
 
 from ase import Atoms
 from ase.io import write
@@ -109,6 +110,41 @@ def build_fairchem_uma(checkpoint: str, device: str = 'cuda', **kwargs):
     return calc
 
 
+############################ Timing Decorator #################################
+def timed(func=None):
+    """计时装饰器: 返回 (result, elapsed_seconds)。
+
+    调用时可额外传入:
+        timer_label: 自定义计时标签 (默认=函数名)
+        save_dir: 若提供则将 'label: seconds' 追加写入 save_dir/timing_log.txt
+    """
+    if func is None:
+        def _wrap(f):
+            return timed(f)
+        return _wrap
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        import time
+        label = kwargs.pop('timer_label', func.__name__)
+        save_dir = kwargs.pop('save_dir', None)
+        start = time.time()
+        print(f"[TIMER] {label} started.")
+        result = func(*args, **kwargs)
+        elapsed = time.time() - start
+        print(f"[TIMER] {label} finished in {elapsed:.3f} s.")
+        if save_dir:
+            try:
+                os.makedirs(save_dir, exist_ok=True)
+                with open(os.path.join(save_dir, 'timing_log.txt'), 'a', encoding='utf-8') as f:
+                    f.write(f"{label}: {elapsed:.6f} seconds\n")
+            except Exception as e:
+                print(f"[TIMER][WARN] logging failed: {e}")
+        return result, elapsed
+    return wrapper
+
+
+@timed
 def safe_optimize_with_md_loop(atoms, calc, n_loops=5, fmax=0.03, relax_cell=False,
                                anneal_kwargs=None, quench_kwargs=None, min_deltaE=1e-3,
                                outdir: str = '.'):
@@ -524,6 +560,7 @@ def parse_orca_output(out_file: str) -> Dict[str, Any]:
     return res
 
 
+@timed
 def run_orca_dft(atoms: Atoms,
                  orca_command: str,
                  workdir: str,
@@ -611,13 +648,13 @@ def optimize_and_characterize(gen_path: str,
     if quench_defaults: quench_kwargs.update(quench_defaults)
 
     # UMA optimize (with safe fallback)
-    # best_atoms, best_E = safe_optimize_with_md_loop(atoms, calc, n_loops=loops, fmax=fmax, relax_cell=relax_cell,
-    #                                                     anneal_kwargs=anneal_kwargs, quench_kwargs=quench_kwargs, min_deltaE=1e-3, outdir=outdir)
-    best_atoms = atoms
-    atoms.calc = calc
-    best_E = atoms.get_potential_energy()
+    atoms.set_cell(torch.tensor([[20.0, 0.0, 0.0], [0.0, 20.0, 0.0], [0.0, 0.0, 20.0]]))
+    atoms.pbc = False
+    best_atoms, best_E = safe_optimize_with_md_loop(atoms, calc, n_loops=loops, fmax=fmax, relax_cell=relax_cell,
+                                                        anneal_kwargs=anneal_kwargs, quench_kwargs=quench_kwargs, min_deltaE=1e-3, outdir=outdir)
+    timing_records = []
+    timing_records.append(('Single-Step UMA Energy', best_E))
     print('atom pos', atoms.positions)
-    atoms.set_cell(torch.tensor([[5.0, 0.0, 0.0], [0.0, 5.0, 0.0], [0.0, 0.0, 5.0]]))
     
     # Save UMA results
     write(os.path.join(outdir, 'best.traj'), best_atoms)
@@ -630,11 +667,22 @@ def optimize_and_characterize(gen_path: str,
     if run_dft:
         print("Starting ORCA DFT single-point calculation...")
         orca_dir = os.path.join(outdir, 'orca_sp')
-        dft = run_orca_dft(best_atoms, orca_command=orca_command, workdir=orca_dir, maxcore=orca_maxcore,
-                           nprocs=orca_nprocs, orcasimpleinput=orca_simpleinput, extra_blocks=orca_extra_blocks)
+        (dft, dft_elapsed) = run_orca_dft(best_atoms, orca_command=orca_command, workdir=orca_dir, maxcore=orca_maxcore,
+                                          nprocs=orca_nprocs, orcasimpleinput=orca_simpleinput, extra_blocks=orca_extra_blocks,
+                                          timer_label='ORCA DFT Single-Point', save_dir=orca_dir)
         with open(os.path.join(orca_dir, 'dft_results.json'), 'w') as f: json.dump(dft, f, indent=2)
         result['dft'] = dft
+        timing_records.append(('ORCA DFT Single-Point', dft_elapsed))
         print("ORCA DFT done. results:", dft)
+
+    # Append consolidated timing summary
+    try:
+        with open(os.path.join(outdir, 'timing_log.txt'), 'a', encoding='utf-8') as f:
+            f.write("\n--- Summary (optimize_and_characterize) ---\n")
+            for name, sec in timing_records:
+                f.write(f"{name}: {sec:.6f} seconds\n")
+    except Exception as e:
+        print('[TIMER][WARN] failed to append summary:', e)
     return result
 
 # ---------------- CLI ----------------
