@@ -271,7 +271,6 @@ def main():
 
     os.makedirs(args.save_dir, exist_ok=True)
 
-    # 创建计时包装的协同函数
     collab_timed = timed(agent.collaborate_between_agents_12)
 
     if args.no_llm:
@@ -308,9 +307,9 @@ def main():
         print('[INFO] LLM scaffold mode. Provide API key for your selected client.')
         obj, cond, prop, req = agent.entity_extraction(args.prompt)
         print(f"[INFO] ------------------------\n \
-            Entity Extraction Results:\n \
-                Object: {obj},\n Conditions: {cond},\n Properties: {prop},\n Design requirements: {req}\n \
-                    ------------------------")
+  Entity Extraction Results:\n \
+  Object: {obj},\n Conditions: {cond},\n Properties: {prop},\n Design requirements: {req}\n \
+ ------------------------")
         
         print('[INFO] Geting scaffold from Agent-1...')
         z, cart_coords, batch, lengths, angles, num_atoms = agent.get_scaffold(req, visualize_results=False)
@@ -326,6 +325,7 @@ def main():
         if args.no_generator:
             print('[INFO] --no-generator flag set; skipping Agent-2 generation.')
             lengths_pred, angles_pred, coords_gen, z_gen = lengths_s, angles_s, cart_s, z_s
+            elapsed = 0.0
         else:
             print('[INFO] Generating scaffold with Agent-2...')
             data = Data(
@@ -356,7 +356,7 @@ def main():
                 save_dir=args.save_dir,
             )
             _, lengths_pred, angles_pred, coords_gen, z_gen = _final
-            
+
         out = os.path.join(args.save_dir, f'gen_{args.logic_mode}.npz')
         np.savez(out,
                 atom_types=z_gen.detach().cpu().numpy(),

@@ -104,8 +104,10 @@ def build_fairchem_uma(checkpoint: str, device: str = 'cuda', **kwargs):
         name_or_path=checkpoint,
         task_name="omat",
         inference_settings="default",
-        device="cuda"
+        device=device,
+
     )
+    print("Fairchem UMA calculator built from checkpoint:", checkpoint)
 
     return calc
 
@@ -591,7 +593,7 @@ def optimize_and_characterize(gen_path: str,
                               uma_ckpt: str = None,
                               uma_config_yml: str = None,
                               device: str = None,
-                              fallback_emt: bool = False,
+                              fallback_emt: bool = True,
                               preset: str = 'standard',
                               loops: int = 5,
                               fmax: float = 0.03,
@@ -616,8 +618,7 @@ def optimize_and_characterize(gen_path: str,
 
     # UMA calc
     calc = None
-    if uma_ckpt is None:
-        uma_ckpt = os.getenv('FAIRCHEM_UMA_CKPT')
+
     if uma_ckpt is not None:
         extra = {}
         if uma_config_yml is None:
@@ -626,35 +627,70 @@ def optimize_and_characterize(gen_path: str,
         try:
             calc = build_fairchem_uma(uma_ckpt, device=device, **extra)
         except Exception:
-            if not fallback_emt:
-                raise
+            print("Warning: Failed to build UMA calculator from checkpoint. Falling back if enabled.")
     if calc is None:
         if fallback_emt:
+            print("Falling back to EMT calculator.")
             from ase.calculators.emt import EMT; calc = EMT()
         else:
             raise RuntimeError('No calculator available. Provide UMA checkpoint or enable fallback_emt.')
 
     # MD presets
-    npt=False; pressure_atm=1.0; tstep_fs=2.0; friction=0.01
+    npt = False
+    pressure_atm = 1.0
+    tstep_fs = 2.0
+    friction = 0.01
     T_start, T_peak, T_hold_ps = 300.0, 900.0, 10.0
     T_final, cool_ps = 100.0, 20.0
-    if preset=='quick':
-        loops=min(loops,2); T_start, T_peak, T_hold_ps = 300.0, 600.0, 5.0; T_final, cool_ps, tstep_fs = 150.0, 10.0, 2.0; fmax=max(fmax,0.05)
-    elif preset=='thorough':
-        loops=max(loops,8); T_start, T_peak, T_hold_ps = 300.0, 1400.0, 30.0; T_final, cool_ps, tstep_fs = 50.0, 60.0, 1.0; fmax=min(fmax,0.02)
-    anneal_kwargs=dict(T_start=T_start, T_peak=T_peak, T_hold_ps=T_hold_ps, npt=npt, pressure_atm=pressure_atm, tstep_fs=tstep_fs, friction=friction)
-    quench_kwargs=dict(T_final=T_final, cool_ps=cool_ps, npt=npt, pressure_atm=pressure_atm, tstep_fs=tstep_fs, friction=friction)
+
+    if preset == 'quick':
+        loops = min(loops, 1)
+        T_start, T_peak, T_hold_ps = 300.0, 550.0, 2.0
+        T_final, cool_ps, tstep_fs = 180.0, 5.0, 3.0   # 3 fs 如不稳改回 2.0
+        friction = 0.02                                 # 略强阻尼，加速温控收敛
+        fmax = max(fmax, 0.08)
+
+    elif preset == 'sprint': 
+        loops = 1
+        T_start, T_peak, T_hold_ps = 300.0, 500.0, 1.0
+        T_final, cool_ps, tstep_fs = 200.0, 3.0, 3.0
+        friction = 0.02
+        fmax = max(fmax, 0.10)
+
+    elif preset == 'micro': 
+        loops = 1
+        T_start, T_peak, T_hold_ps = 300.0, 320.0, 0.5  # 基本等温，轻微扰动
+        T_final, cool_ps, tstep_fs = 250.0, 1.5, 3.0
+        friction = 0.02
+        fmax = max(fmax, 0.12)
+
+    elif preset == 'thorough':
+        loops = max(loops, 8)
+        T_start, T_peak, T_hold_ps = 300.0, 1400.0, 30.0
+        T_final, cool_ps, tstep_fs = 50.0, 60.0, 1.0
+        fmax = min(fmax, 0.02)
+
+    anneal_kwargs = dict(
+        T_start=T_start, T_peak=T_peak, T_hold_ps=T_hold_ps,
+        npt=npt, pressure_atm=pressure_atm,
+        tstep_fs=tstep_fs, friction=friction
+    )
+    quench_kwargs = dict(
+        T_final=T_final, cool_ps=cool_ps,
+        npt=npt, pressure_atm=pressure_atm,
+        tstep_fs=tstep_fs, friction=friction
+    )
     if anneal_defaults: anneal_kwargs.update(anneal_defaults)
     if quench_defaults: quench_kwargs.update(quench_defaults)
 
     # UMA optimize (with safe fallback)
-    atoms.set_cell(torch.tensor([[20.0, 0.0, 0.0], [0.0, 20.0, 0.0], [0.0, 0.0, 20.0]]))
-    atoms.pbc = False
-    best_atoms, best_E = safe_optimize_with_md_loop(atoms, calc, n_loops=loops, fmax=fmax, relax_cell=relax_cell,
+    # atoms.set_cell(torch.tensor([[20.0, 0.0, 0.0], [0.0, 20.0, 0.0], [0.0, 0.0, 20.0]]))
+    # atoms.pbc = True
+    (best_atoms, best_E), _elapsed = safe_optimize_with_md_loop(atoms, calc, n_loops=loops, fmax=fmax, relax_cell=relax_cell,
                                                         anneal_kwargs=anneal_kwargs, quench_kwargs=quench_kwargs, min_deltaE=1e-3, outdir=outdir)
     timing_records = []
     timing_records.append(('Single-Step UMA Energy', best_E))
-    print('atom pos', atoms.positions)
+    # print('atom pos', atoms.positions)
     
     # Save UMA results
     write(os.path.join(outdir, 'best.traj'), best_atoms)
@@ -705,7 +741,7 @@ def main():
     ap.add_argument('--loops', type=int, default=5)
     ap.add_argument('--fmax', type=float, default=0.03)
     ap.add_argument('--relax-cell', action='store_true')
-    ap.add_argument('--preset', type=str, default='standard', choices=['quick','standard','thorough'])
+    ap.add_argument('--preset', type=str, default='standard', choices=['quick','sprint', 'micro','standard','thorough'])
 
     # ORCA
     ap.add_argument('--run-dft', action='store_true')
@@ -723,7 +759,7 @@ def main():
         uma_ckpt=args.ckpt,
         uma_config_yml=args.config_yml,
         device=args.device,
-        fallback_emt=args.fallback_emt,
+        fallback_emt=True,
         preset=args.preset,
         loops=args.loops,
         fmax=args.fmax,

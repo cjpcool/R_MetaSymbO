@@ -50,9 +50,10 @@ Download R_MetaSymbo checkpoint (omat24_rattle2) from https://drive.google.com/d
 
 ```bash
 python gen_test.py \
-  --cif-dir ./data/cifs \
+  --no-generator \
+  --api-key "" \
   --ckpt-dir ./checkpoints/omat24_rattle2 \
-  --prompt "Wide-gap semiconductor, wurtzite-like scaffold" \
+  --prompt "Al20Zn80 at 870K is a solid at equilibrium" \
   --save-dir ./_gens
 ```
 
