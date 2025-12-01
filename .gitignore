@@ -18,7 +18,8 @@ sprint1-drop4-problems.jsonl
 metamaterial_design_prompts.csv
 run_modal_agent.py
 train_ae.py
-train_generator.py
+# train_generator.py
+train_predictor.py
 evaluation.py
 # batch_claim_pipeline.py
 .vev/
