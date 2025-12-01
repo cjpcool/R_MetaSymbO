@@ -1,7 +1,0 @@
-
---- Summary (optimize_and_characterize) ---
-Single-Step UMA Energy: -5.798727 seconds
-
---- Summary (optimize_and_characterize) ---
-Single-Step UMA Energy: -3.353624 seconds
-ORCA DFT Single-Point: 9.545950 seconds

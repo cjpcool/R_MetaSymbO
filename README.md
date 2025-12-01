@@ -32,6 +32,7 @@ This repository ties together three phases:
 ---
 
 ## Quickstart
+You should run the code sequentially, in step (1) -> (2) -> (2.1) -> (3).
 
 ### 0) Environment
 
@@ -40,55 +41,44 @@ This repository ties together three phases:
 - **ASE** (`pip install ase`)  
 - **Fairchem / OCP** (UMA) — one of:
   - `pip install fairchem`
-  - Download UMA Checkpoint from huggingface
-- **ORCA** (optional, for DFT): install ORCA and ensure the binary is on `PATH` or set `ORCA_COMMAND=/path/to/orca`.
+  - Download UMA Checkpoint from huggingface: save the downloaded "uma-s-1p1.pt" to ./checkpoint
+- **ORCA** (optional, for DFT): install ORCA and ensure the binary is on `PATH` or set `ORCA_COMMAND=/path/to/orca`. Reference: https://orcaforum.kofo.mpg.de/app.php/portal
 
 ### 1) Generate a crystal (Agent-1/2 only)
 
 **LLM scaffold mode (Agent-1):**
-Download R_MetaSymbo checkpoint (omat24_rattle2) from https://drive.google.com/drive/folders/1JQ6-tAcz7B5CCfuJSiCyuYng-0eFO9GY?usp=sharing
+- **R_MetaSymbO checkpoint** on omat24dataset: download from https://drive.google.com/drive/folders/1JQ6-tAcz7B5CCfuJSiCyuYng-0eFO9GY?usp=sharing and save to ./checkpoints/omat24_rattle2
 
 ```bash
 python gen_test.py \
   --no-generator \
+  --designer_client 'gpt-5' \
   --api-key "" \
   --ckpt-dir ./checkpoints/omat24_rattle2 \
   --prompt "Al20Zn80 at 870K is a solid at equilibrium" \
-  --save-dir ./_gens
+  --save-dir ./_gens \
+  --seed 42
 ```
 
-**Offline scaffold (no LLM):**
-```
-python gen_test.py \
-  --no-llm --prototype rocksalt \
-  --ckpt-dir ./checkpoints/omat24_rattle2 \
-  --save-dir ./_gens
-```
+
 Output: ./_gens/gen_union.npz (or rocksalt_union_offline.npz) with Z, cart_coords, lengths, angles.
 
 ### 2) UMA MD/relax only
+- Download UMA Checkpoint from huggingface and save the downloaded "uma-s-1p1.pt" to ./checkpoint
 Using **UMA (preferred)**. If you don’t pass a checkpoint, script will check `FAIRCHEM_UMA_CKPT`:
 ```
 export FAIRCHEM_UMA_CKPT=/path/to/uma.pt
-export FAIRCHEM_UMA_CONFIG=/path/to/config.yaml   # optional
 python wrap_md_uma.py \
   --gen-path ./_gens/gen_union.npz \
   --preset standard \
   --outdir ./_mdopt
   ```
-**Smoke test** without UMA (EMT fallback):、
-```
-python wrap_md_uma.py \
-  --gen-path ./_gens/rocksalt_union_offline.npz \
-  --fallback-emt \
-  --preset quick \
-  --outdir ./_mdopt_test
-```
+
 **Outputs:**
 
 `_mdopt/best.traj`, `_mdopt/best_energy.txt` and logs (when enabled).
 
-### Analyze optimization trajectories
+### (2.1) Analyze optimization trajectories
 ```
 python structure_optim_modules/analyze_optimization.py --root ./_mdopt --pattern "loop_*.traj" --save-dir ./_mdopt/analysis \
   --export-json ./_mdopt/analysis/metrics.json --export-csv ./_mdopt/analysis/metrics.csv --no-show --compare
@@ -135,9 +125,7 @@ res = optimize_and_characterize(
     orca_command="orca",                 # or env ORCA_COMMAND
     orca_maxcore=4000,
     orca_nprocs=8,
-    orca_simpleinput=(
-        "M062X 6-31G* SP EnGrad D3BJ def2/J RIJCOSX TightSCF NoAutoStart MiniPrint NoPop"
-    ),
+    ,
 )
 print(res["uma"]["energy_eV"], res.get("dft", {}).get("energy_eV"))
 ```

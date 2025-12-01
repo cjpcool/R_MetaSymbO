@@ -1,1 +1,0 @@
-ORCA DFT Single-Point: 7.642503 seconds

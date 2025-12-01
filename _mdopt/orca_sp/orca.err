@@ -1,0 +1,122 @@
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 7]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773521] *** Process received signal ***
+[zhoulab-1:1773521] Signal: Aborted (6)
+[zhoulab-1:1773521] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 0]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773514] *** Process received signal ***
+[zhoulab-1:1773514] Signal: Aborted (6)
+[zhoulab-1:1773514] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 1]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773515] *** Process received signal ***
+[zhoulab-1:1773515] Signal: Aborted (6)
+[zhoulab-1:1773515] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 2]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773516] *** Process received signal ***
+[zhoulab-1:1773516] Signal: Aborted (6)
+[zhoulab-1:1773516] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 3]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773517] *** Process received signal ***
+[zhoulab-1:1773517] Signal: Aborted (6)
+[zhoulab-1:1773517] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 4]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773518] *** Process received signal ***
+[zhoulab-1:1773518] Signal: Aborted (6)
+[zhoulab-1:1773518] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 5]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773519] *** Process received signal ***
+[zhoulab-1:1773519] Signal: Aborted (6)
+[zhoulab-1:1773519] Signal code:  (-6)
+[file orca_leanscf/orca_leanscf.cpp, line 306, Process 6]: Error (ORCA_LEANSCF): unfortunately, the SCF has not converged. There may be a way out but we have to stop here 
+[zhoulab-1:1773520] *** Process received signal ***
+[zhoulab-1:1773520] Signal: Aborted (6)
+[zhoulab-1:1773520] Signal code:  (-6)
+[zhoulab-1:1773520] [ 0] [zhoulab-1:1773514] [ 0] [zhoulab-1:1773521] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f57bd024520]
+[zhoulab-1:1773520] [ 1] [zhoulab-1:1773515] [ 0] [zhoulab-1:1773517] [ 0] [zhoulab-1:1773519] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f6278112520]
+[zhoulab-1:1773514] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f62781669fc]
+[zhoulab-1:1773514] [ 2] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f57bd0789fc]
+[zhoulab-1:1773520] [ 2] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f57bd024476]
+[zhoulab-1:1773520] [ 3] [zhoulab-1:1773516] [ 0] [zhoulab-1:1773518] [ 0] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f6278112476]
+[zhoulab-1:1773514] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f62780f87f3]
+[zhoulab-1:1773514] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7fb04cbd0520]
+[zhoulab-1:1773518] [ 1] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f57bd00a7f3]
+[zhoulab-1:1773520] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7ff40bf74520]
+[zhoulab-1:1773515] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7ff40bfc89fc]
+[zhoulab-1:1773515] [ 2] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7ff40bf74476]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f2826f2b520]
+[zhoulab-1:1773516] [ 1] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f2d559ec520]
+[zhoulab-1:1773517] [ 1] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f2d55a409fc]
+[zhoulab-1:1773517] [ 2] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f2d559ec476]
+[zhoulab-1:1773517] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f8bff8a1520]
+[zhoulab-1:1773519] [ 1] [zhoulab-1:1773515] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f2d559d27f3]
+[zhoulab-1:1773517] [ 4] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7fb04cc249fc]
+[zhoulab-1:1773518] [ 2] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f8bff8f59fc]
+[zhoulab-1:1773519] [ 2] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f8bff8a1476]
+[zhoulab-1:1773519] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f8bff8877f3]
+[zhoulab-1:1773519] [ 4] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f2826f7f9fc]
+[zhoulab-1:1773516] [ 2] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f2826f2b476]
+[zhoulab-1:1773516] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7ff40bf5a7f3]
+[zhoulab-1:1773515] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7ff7db62b520]
+[zhoulab-1:1773521] [ 1] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7fb04cbd0476]
+[zhoulab-1:1773518] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f2826f117f3]
+[zhoulab-1:1773516] [ 4] /lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7ff7db67f9fc]
+[zhoulab-1:1773521] [ 2] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7fb04cbb67f3]
+[zhoulab-1:1773518] [ 4] /lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7ff7db62b476]
+[zhoulab-1:1773521] [ 3] /lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7ff7db6117f3]
+[zhoulab-1:1773521] [ 4] /data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7f627d334950]
+[zhoulab-1:1773514] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773514] [ 6] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f62780f9d90]
+[zhoulab-1:1773514] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f62780f9e40]
+[zhoulab-1:1773514] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+[zhoulab-1:1773514] *** End of error message ***
+/data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7f57c2246950]
+[zhoulab-1:1773520] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773520] [ 6] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f57bd00bd90]
+[zhoulab-1:1773520] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f57bd00be40]
+[zhoulab-1:1773520] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+[zhoulab-1:1773520] *** End of error message ***
+/data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7fb051df2950]
+[zhoulab-1:1773518] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773518] [ 6] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7fb04cbb7d90]
+[zhoulab-1:1773518] [ 7] /data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7f282c14d950]
+[zhoulab-1:1773516] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773516] [ 6] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f2826f12d90]
+[zhoulab-1:1773516] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7fb04cbb7e40]
+[zhoulab-1:1773518] [ 8] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f2826f12e40]
+[zhoulab-1:1773516] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+[zhoulab-1:1773516] *** End of error message ***
+/data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7ff411196950]
+[zhoulab-1:1773515] [ 5] /data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7ff7e084d950]
+[zhoulab-1:1773521] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773521] [ 6] /data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7f2d5ac0e950]
+[zhoulab-1:1773517] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773517] [ 6] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+[zhoulab-1:1773518] *** End of error message ***
+/home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773515] [ 6] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7ff7db612d90]
+[zhoulab-1:1773521] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7ff7db612e40]
+[zhoulab-1:1773521] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f2d559d3d90]
+[zhoulab-1:1773517] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f2d559d3e40]
+[zhoulab-1:1773517] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+/data/home/grads/jianpengc/orca_6_1_0/lib/liborca_tools_6_1_0_mpi.so.6(_Z9PAL_Aborti+0x20)[0x7f8c04ac3950]
+[zhoulab-1:1773519] [ 5] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x426a7f]
+[zhoulab-1:1773519] /lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7ff40bf5bd90]
+[zhoulab-1:1773515] [ 7] [ 6] [zhoulab-1:1773521] *** End of error message ***
+[zhoulab-1:1773517] *** End of error message ***
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7ff40bf5be40]
+[zhoulab-1:1773515] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+[zhoulab-1:1773515] *** End of error message ***
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f8bff888d90]
+[zhoulab-1:1773519] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f8bff888e40]
+[zhoulab-1:1773519] [ 8] /home/grads/jianpengc/orca_6_1_0/orca_leanscf_mpi[0x425f56]
+[zhoulab-1:1773519] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 4 with PID 0 on node zhoulab-1 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+[file orca_tools/qcmsg.cpp, line 394]: 
+  .... aborting the run
+

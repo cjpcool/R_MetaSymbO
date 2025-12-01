@@ -29,7 +29,7 @@ def parse_args() -> argparse.Namespace:
                         help="Project root used to locate checkpoints, etc.")
 
     # agent 1 settings
-    parser.add_argument("--designer_client", type=str, default="gpt-4o-mini",
+    parser.add_argument("--designer_client", type=str, default="gpt-5-mini",
                         help="Client model for designer agent")
     # agent 3 settings
     parser.add_argument('--supervisor_client', type=str, default="gpt-4.1",

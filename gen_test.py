@@ -200,6 +200,7 @@ def main():
     p.add_argument('--no-llm', action='store_true', help='Use offline built-in scaffold (skip Agent-1 LLM).')
     p.add_argument('--no-generator', action='store_true', help='Skip Agent-2 generation.')
     p.add_argument('--prototype', type=str, default='rocksalt', choices=['rocksalt', 'diamond'], help='Offline scaffold type.')
+    p.add_argument('--designer-client', type=str, default=None, help='Specify the designer client for LLM.')
     p.add_argument('--seed', type=int, default=1337)
     args = p.parse_args()
 
@@ -264,7 +265,7 @@ def main():
         root='.',
         ckpt_dir=args.ckpt_dir,
         device=args.device,
-        designer_client='gpt-4o-mini',  # ignored if --no-llm
+        designer_client=args.designer_client,  # ignored if --no-llm
         api_key=args.api_key,
     ).to(args.device)
 
@@ -312,7 +313,8 @@ def main():
  ------------------------")
         
         print('[INFO] Geting scaffold from Agent-1...')
-        z, cart_coords, batch, lengths, angles, num_atoms = agent.get_scaffold(req, visualize_results=False)
+        req_prompt = f"Generate Object {obj}, and try to satisfy the requirements: {req}"
+        z, cart_coords, batch, lengths, angles, num_atoms = agent.get_scaffold(req_prompt, visualize_results=False)
         scaffold = (z, cart_coords, batch, lengths, angles, num_atoms)
         # Build a Batch directly from the scaffold so batch_data matches its structure
 
@@ -358,6 +360,7 @@ def main():
             _, lengths_pred, angles_pred, coords_gen, z_gen = _final
 
         out = os.path.join(args.save_dir, f'gen_{args.logic_mode}.npz')
+        os.makedirs(os.path.dirname(out), exist_ok=True)
         np.savez(out,
                 atom_types=z_gen.detach().cpu().numpy(),
                 cart_coords=coords_gen.detach().cpu().numpy(),

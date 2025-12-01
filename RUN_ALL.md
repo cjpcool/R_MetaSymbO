@@ -17,10 +17,10 @@ python gen_test.py \
 python wrap_md_uma_dft.py \
   --gen-path ./_gens/gen_union.npz \
   --ckpt /path/to/uma.pt \
-  --run-dft --orca-command orca --nprocs 16 --maxcore 6000 \
-  --orcasimpleinput "M062X 6-31G* SP EnGrad D3BJ def2/J RIJCOSX TightSCF NoAutoStart MiniPrint NoPop" \
-  --preset thorough \
+  --run-dft --orca-command orca --nprocs 8 --maxcore 6000 \
+  --preset standard \
   --outdir ./_mdopt
+  <!-- --orcasimpleinput "M062X 6-31G* SP EnGrad D3BJ def2/J RIJCOSX TightSCF NoAutoStart MiniPrint NoPop" \ -->
 ~~~
 
 ## Analyze MD Optimization Trajectory

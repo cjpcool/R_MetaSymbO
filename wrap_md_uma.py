@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
 """
-UMA -> MD/Relax -> ORCA-DFT 单点表征 的一体化脚本（含可编程 API）
+Integrated script (with programmable API) for:
+UMA -> MD/relaxation -> ORCA-DFT single-point characterization
 
-功能
-----
-1) 读取生成器输出的 .npz/.npy（atom_types, cart_coords, lengths, angles）构造 ASE Atoms
-2) 使用 Fairchem (OCP) UMA 预训练模型做 MD/退火/淬火 + 0K 松弛（或 EMT 回退）
-3) （可选）用 ORCA 做单点( SP + EnGrad ) 计算，解析能量、HOMO/LUMO 缝隙、偶极等
-4) 将 UMA 与 DFT 结果保存到指定目录，并提供 `optimize_and_characterize(...)` 方法返回最终结果
-
-重要说明
+Features
 --------
-• ORCA 为分子级非周期程序；DFT 步会在结构副本上 set_pbc(False)，并去掉晶胞，仅做单点/梯度。
-• ORCA 默认输入参考你的模板并做了小幅增强：
-  "M062X 6-31G* SP EnGrad D3BJ def2/J RIJCOSX TightSCF NoAutoStart MiniPrint NoPop"
-• ORCA 并非所有性质都能经由 ASE 自动解析；本脚本附带轻量输出解析器提取常见量。
+1) Read generator outputs .npz/.npy (atom_types, cart_coords, lengths, angles) to build ASE Atoms.
+2) Use Fairchem (OCP) UMA pretrained model to run MD/anneal/quench + 0 K relaxation (or fallback to EMT).
+3) Optionally run ORCA single-point (SP + EnGrad) DFT and parse energy, HOMO/LUMO gap, dipole, etc.
+4) Save UMA and DFT results to a target directory; provide `optimize_and_characterize(...)` returning results.
+
+Notes
+-----
+• ORCA is non-periodic (molecular). The DFT step copies the structure, sets `set_pbc(False)`, removes the cell, and runs single-point/gradient only.
+• The default ORCA input follows a practical template with small enhancements:
+    "M062X 6-31G* SP EnGrad D3BJ def2/J RIJCOSX TightSCF NoAutoStart MiniPrint NoPop"
+• Not all ORCA properties are parsed automatically via ASE; this script includes a lightweight parser for common quantities.
 """
 
 import argparse
@@ -114,11 +115,11 @@ def build_fairchem_uma(checkpoint: str, device: str = 'cuda', **kwargs):
 
 ############################ Timing Decorator #################################
 def timed(func=None):
-    """计时装饰器: 返回 (result, elapsed_seconds)。
+    """Timing decorator: returns (result, elapsed_seconds).
 
-    调用时可额外传入:
-        timer_label: 自定义计时标签 (默认=函数名)
-        save_dir: 若提供则将 'label: seconds' 追加写入 save_dir/timing_log.txt
+    Accepts optional kwargs:
+        timer_label: custom label for timing (default=function name)
+        save_dir: if provided, appends 'label: seconds' to save_dir/timing_log.txt
     """
     if func is None:
         def _wrap(f):
@@ -178,6 +179,7 @@ def safe_optimize_with_md_loop(atoms, calc, n_loops=5, fmax=0.03, relax_cell=Fal
         print(f"Loop {i+1}/{n_loops}: Final energy = {Ei:.6f} eV (best so far: {best_E:.6f} eV)")
 
         if Ei + min_deltaE < best_E:
+            write(os.path.join(outdir, f'best.traj'), atoms)
             best, best_E = atoms.copy(), Ei
             improvement = best_E - Ei
             print(f"  *** NEW BEST STRUCTURE! Improvement: {improvement:.6f} eV ***")
@@ -192,8 +194,8 @@ def safe_optimize_with_md_loop(atoms, calc, n_loops=5, fmax=0.03, relax_cell=Fal
 
 def try_orca_property_to_json(workdir: str, basename: str = "orca"):
     """
-    若存在 orca_2json 且生成了 basename.property.txt，则转为 basename.property.json。
-    失败时静默跳过，不影响主流程。
+    If `orca_2json` exists and `basename.property.txt` was generated,
+    convert it to `basename.property.json`. Failures are ignored.
     """
     prop_txt = os.path.join(workdir, f"{basename}.property.txt")
     if not os.path.exists(prop_txt):
@@ -201,7 +203,7 @@ def try_orca_property_to_json(workdir: str, basename: str = "orca"):
     if shutil.which("orca_2json") is None:
         return
     try:
-        # 等价于在终端执行：orca_2json orca_calc -property
+        # Equivalent to: `orca_2json orca_calc -property` in terminal
         subprocess.run(["orca_2json", basename, "-property"], cwd=workdir,
                        check=False, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     except Exception as e:
@@ -216,35 +218,35 @@ def build_orca_calculator(atoms, orca_command: str,
                           extra_blocks: str = "",
                           add_default_scf=True):
 
-    # ---- 并行与内存 ----
+    # ---- Parallelism and memory ----
     if nprocs is None:
         nprocs = max(1, os.cpu_count() or 1)
 
-    # ---- 基本关键字（可按需改）----
+    # ---- Basic keywords (tunable) ----
     if orcasimpleinput is None:
-        # PBE + RIJCOSX + D3BJ：勘探/几何优化的“耐造”组合
+        # PBE + RIJCOSX + D3BJ: robust combo for exploration/geom opt
         orcasimpleinput = "PBE def2-SVP def2/J RIJCOSX TightSCF D4 EnGrad CHELPG"
 
-    # ---- 电荷 / 多重度（自动推断）----
+    # ---- Charge / multiplicity (auto infer) ----
     charge = None
     mult = None
     if charge is None:
-        charge = 0  # 默认中性
+        charge = 0  # default: neutral
 
     if mult is None:
-        # 根据电子奇偶性给个“物理合理”的初始多重度
+        # Pick a physically reasonable initial multiplicity by parity
         # electron count = Z_total - charge
         Z_total = int(np.array(atoms.get_atomic_numbers()).sum())
         n_electrons = Z_total - charge
-        # 偶电子 -> 单重态；奇电子 -> 双重态
+        # even electrons -> singlet; odd electrons -> doublet
         mult = 1 if (n_electrons % 2 == 0) else 2
 
-    # ---- 若是开放壳层又没指定波函数类型，则加 UKS ----
+    # ---- If open-shell and no WF type specified, add UKS ----
     simple_lower = " " + orcasimpleinput.lower() + " "
     if mult > 1 and not any(x in simple_lower for x in [" uks ", " uhf ", " rohf "]):
         orcasimpleinput = "UKS " + orcasimpleinput
 
-    # ---- Blocks 组装（顺序很重要：%maxcore 在前，后面的 block 可覆盖细节）----
+    # ---- Assemble blocks (order matters: %maxcore first; later blocks may override details) ----
     blocks_list = []
     blocks_list.append(f"%maxcore {maxcore}")
 
@@ -253,12 +255,11 @@ def build_orca_calculator(atoms, orca_command: str,
 end""")
 
     if add_default_scf:
-        # 给一份“通用耐收敛”的 SCF 设置（可按需删改）
+        # Provide a generally robust SCF configuration (adjust as needed)
         blocks_list.append("""%scf
   MaxIter 50
   DIISStart 3
   SOSCFStart 8
-  # 金属体系有时加点电子温度有利于收敛（单位 K）
 end""")
     blocks_list.append("""%output
   PrintLevel Normal
@@ -278,23 +279,23 @@ end""")
 
 
     if extra_blocks:
-        # 用户追加，放在最后，覆盖前述设置
+        # User-supplied additions appended last to override previous settings
         blocks_list.append(extra_blocks.strip())
 
     orcablocks = "\n\n".join(blocks_list) + "\n"
 
-    # ---- 文件名/路径与 Profile ----
+    # ---- Filenames/paths and profile ----
     os.makedirs(workdir, exist_ok=True)
     label = "orca"
     profile = OrcaProfile(command=orca_command) if orca_command else OrcaProfile()
 
-    # ---- 构造 calculator ----
+    # ---- Build calculator ----
     calc = ORCA(
         profile=profile,
         directory=workdir,     # ASE ORCA 支持 directory 参数
-        label=label,           # 计算文件前缀
-        charge=charge,         # ★ 关键：显式设置电荷
-        mult=mult,             # ★ 关键：显式设置多重度
+        label=label,           # calculation file prefix
+        charge=charge,         # explicit charge
+        mult=mult,             # explicit multiplicity
         orcasimpleinput=orcasimpleinput,
         orcablocks=orcablocks,
     )
@@ -646,8 +647,8 @@ def optimize_and_characterize(gen_path: str,
     if preset == 'quick':
         loops = min(loops, 1)
         T_start, T_peak, T_hold_ps = 300.0, 550.0, 2.0
-        T_final, cool_ps, tstep_fs = 180.0, 5.0, 3.0   # 3 fs 如不稳改回 2.0
-        friction = 0.02                                 # 略强阻尼，加速温控收敛
+        T_final, cool_ps, tstep_fs = 180.0, 5.0, 3.0   # Use 2.0 if unstable
+        friction = 0.02                                 # Slightly stronger damping for faster thermostat convergence
         fmax = max(fmax, 0.08)
 
     elif preset == 'sprint': 
@@ -659,7 +660,7 @@ def optimize_and_characterize(gen_path: str,
 
     elif preset == 'micro': 
         loops = 1
-        T_start, T_peak, T_hold_ps = 300.0, 320.0, 0.5  # 基本等温，轻微扰动
+        T_start, T_peak, T_hold_ps = 300.0, 320.0, 0.5  # Near isothermal, mild perturbation
         T_final, cool_ps, tstep_fs = 250.0, 1.5, 3.0
         friction = 0.02
         fmax = max(fmax, 0.12)
@@ -686,14 +687,13 @@ def optimize_and_characterize(gen_path: str,
     # UMA optimize (with safe fallback)
     # atoms.set_cell(torch.tensor([[20.0, 0.0, 0.0], [0.0, 20.0, 0.0], [0.0, 0.0, 20.0]]))
     # atoms.pbc = True
-    (best_atoms, best_E), _elapsed = safe_optimize_with_md_loop(atoms, calc, n_loops=loops, fmax=fmax, relax_cell=relax_cell,
+    (best_atoms, best_E), uma_elapsed = safe_optimize_with_md_loop(atoms, calc, n_loops=loops, fmax=fmax, relax_cell=relax_cell,
                                                         anneal_kwargs=anneal_kwargs, quench_kwargs=quench_kwargs, min_deltaE=1e-3, outdir=outdir)
     timing_records = []
-    timing_records.append(('Single-Step UMA Energy', best_E))
+    timing_records.append(('Single-Step UMA Energy', uma_elapsed))
     # print('atom pos', atoms.positions)
     
     # Save UMA results
-    write(os.path.join(outdir, 'best.traj'), best_atoms)
     write(os.path.join(outdir, 'best.xyz'), best_atoms)
     with open(os.path.join(outdir, 'best_energy.txt'), 'w') as f: f.write(f"{best_E:.6f}\n")
 

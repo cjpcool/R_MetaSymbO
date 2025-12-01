@@ -1,4 +1,6 @@
-# server.py
+"""
+FastAPI server exposing R_MetaSymbO crystal generation + UMA/DFT optimization.
+"""
 # pip install fastapi uvicorn pydantic
 from __future__ import annotations
 
@@ -71,6 +73,7 @@ class PipelineIn(BaseModel):
     prototype: Optional[str] = None
     api_key: Optional[str] = None
     extra_args: Optional[List[str]] = None
+    designer_client: Optional[str] = None
     # optimize
     outdir: str = "./_mdopt"
     device: Optional[str] = "cuda"
@@ -110,6 +113,7 @@ def _run_gen_test(
     prototype: Optional[str],
     api_key: Optional[str],
     extra_args: Optional[List[str]],
+    designer_client: Optional[str] = None,
 ) -> (Path, List[str], str):
     """
     Calls the README's generation entrypoint:
@@ -126,6 +130,8 @@ def _run_gen_test(
             cmd += ["--api-key", api_key]
         if cif_dir:
             cmd += ["--cif-dir", cif_dir]
+        if designer_client:
+            cmd += ["--designer_client", designer_client]
     else:
         # Offline prototype
         if not prototype:
@@ -181,6 +187,7 @@ def generate(inp: GenerateIn):
         prototype=inp.prototype,
         api_key=inp.api_key,
         extra_args=inp.extra_args,
+        designer_client=inp.designer_client,
     )
     return GenerateOut(gen_path=str(gen_path), saved_files=files, log=log)
 
@@ -233,6 +240,7 @@ def pipeline(inp: PipelineIn):
         prototype=inp.prototype,
         api_key=inp.api_key,
         extra_args=inp.extra_args,
+        designer_client=inp.designer_client,
     )
 
     # Step 2/3: optimize (optional)
