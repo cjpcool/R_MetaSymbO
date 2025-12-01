@@ -17,8 +17,10 @@ __pycache__/*
 sprint1-drop4-problems.jsonl
 metamaterial_design_prompts.csv
 run_modal_agent.py
+batch_claim_pipeline.py
+train_ae.py
+train_generator.py
 /_mdopt
 /baselines
 /batch_runs
 /_gens
-# batch_claim_pipeline.py
