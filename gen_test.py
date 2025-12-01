@@ -134,18 +134,6 @@ def offline_scaffold(prototype: str = 'rocksalt') -> Tuple[torch.Tensor, torch.T
 
 # ---------------- Timing Decorator ----------------
 def timed(func=None):
-    """函数计时装饰器。
-
-    使用方式: 
-    1) 直接装饰: @timed  -> 调用时 label 默认为函数名。
-    2) 动态包装: wrapped = timed(original_fn); wrapped(..., timer_label='自定义标签', save_dir='path')
-
-    调用时可额外传入:
-        timer_label: 自定义计时块名称
-        save_dir: 若提供, 记录到 save_dir/generation_time.txt
-
-    返回值: (result, elapsed_seconds)
-    """
     import functools, time
 
     if func is None:
